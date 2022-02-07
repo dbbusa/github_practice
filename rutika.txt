@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-Hyy
-=======
-Hello Everyone!!!
->>>>>>> 917c6706eb92a823e4d366c0089a0eb2e3f5c446
