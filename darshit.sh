@@ -1,4 +1,4 @@
 var="Hello World"
  
-# print variable
+# Display variable
 echo "$var"
