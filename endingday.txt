@@ -1,8 +1,7 @@
 Ending the Day
 
 Status :
-    Learning : 
-         - Overview of HTML
-         - HTML Table
-         - Module 1 Practice : Completed
-         - Module 1 Assignment : Completed 		
+     - Module 2 Completed
+     - HTML Assignment Completed
+     - HTML Media Tags
+     - Start Additional Exercises
