@@ -3,13 +3,13 @@ TITLE : Learn CSS and Proparties of CSS
 CONTENT : 
 CSS Learning Outcomes :
 	Topic Learned :
-	   - Overview of CSS
-	   - Types of methos to apply CSS
-	   - CSS Selector
-       - Background, Text and Border Properties
-	   - CSS List Attributes
-	   - CSS Position Attributes
-	   - CSS Display Attributes
+	    - Overview of CSS
+	    - Types of methos to apply CSS
+	    - CSS Selector
+        - Background, Text and Border Properties
+	    - CSS List Attributes
+	    - CSS Position Attributes
+	    - CSS Display Attributes
 
 Module 1:
 	Practice Exercise : 
@@ -42,7 +42,5 @@ Module 2 :
 		- Suppose we have a div with specific height and width and we need to arrange more text into it. Use overflow properties.
 
 	Assignment
-
-		- Create Basic layout of the application which contain header, footer, leftbar and sidebar.
-
-		- Header keep brand logo and navigation bar for home, aboutus and contact us. Navigation should work properly.oject done into resume.
+        - Create Basic layout of the application which contain header, footer, leftbar and sidebar.
+        - Header keep brand logo and navigation bar for home, aboutus and contact us. Navigation should work properly.oject done into resume.
