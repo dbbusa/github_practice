@@ -3,3 +3,35 @@
 
 bootstrap Logo URL
 https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg
+
+
+
+
+
+<section id="NavigationBar">
+        <header>
+            <ul>
+                <li>
+                    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" class="brand_logo" />
+                </li>
+                <li>
+                    <nav aria-label="HomeLink"><a href="#">Home</a></nav>
+                </li>
+                <li>
+                    <nav aria-label="AboutUsLink"><a href="#">AboutUs</a></nav>
+                </li>
+                <li>
+                    <nav aria-label="ContactUsLink"><a href="#">ContactUs</a> </nav>
+                </li>
+                <li>
+                    <nav aria-label="LoginLink"><a href="signin.html">Login</a></nav>
+                </li>
+            </ul>
+        </header>
+    </section>
+
+
+
+
+
+    
