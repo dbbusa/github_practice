@@ -1,13 +1,48 @@
-TITLE : Learn HTML media tags, attributes of media tags and overview of vite build tool
+TITLE : Learn CSS and Proparties of CSS   
 
 CONTENT : 
-Topics to Learn
-   - HTML Media Tags
-   - Attributes of Media Tags
-   - CSS
-   - Vite Build tool
+CSS Learning Outcomes :
+	Topic Learned :
+	   - Overview of CSS
+	   - Types of methos to apply CSS
+	   - CSS Selector
+       - Background, Text and Border Properties
+	   - CSS List Attributes
+	   - CSS Position Attributes
+	   - CSS Display Attributes
 
-Practice Exercise
+Module 1:
+	Practice Exercise : 
 
-Assignment
-  - Create personalized resume, which must be attractive. Use all the HTML tags and add one short video of your project done into resume.
+	   - Provide text alignment to center to student Report Card which is created in Day1 assignment
+	   - Provide Border to one paragraph and write some dummy text into it
+	   - Create city list in horizontal order(using display properties)
+	   - Provide universal selector and apply blue color to a page
+	   - Suppose html markup below, apply all h1 and h2 blue color.
+
+		<div>
+		<h1>Heading1</h1>
+		<h2>Sub Heading</h2>
+		<h1>Heading2</h1>
+		<h2>Sub heading</h2>
+		</div>
+
+	Assignment :
+
+	  - Create personalized resume, which must be attractive. Use all the HTML tags and apply CSS which we have learned so far. Add one short video of your project done into resume. 
+
+
+
+Module 2 : 
+	Practice Exercise
+		- Parent div should contain 3 div inside. Div should be arranged in following manner.
+
+		- Practice position properties static, relative, fixed and absolute.
+
+		- Suppose we have a div with specific height and width and we need to arrange more text into it. Use overflow properties.
+
+	Assignment
+
+		- Create Basic layout of the application which contain header, footer, leftbar and sidebar.
+
+		- Header keep brand logo and navigation bar for home, aboutus and contact us. Navigation should work properly.oject done into resume.
