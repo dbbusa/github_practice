@@ -2,7 +2,7 @@ TITLE : Learn CSS, CSS Box Model, CSS Flex Model
 
 CONTENT : 
 
-Practice Exercise
+Practice Exercise :
     - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1
     - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2
     - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3
@@ -12,8 +12,8 @@ Practice Exercise
     - Flexbox image gallery
     - https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
 
-Assignment
+Assignment :
     - Create a menu list of the website. It should be responsive.
 
 Additional Exercise :
-    - Additional Exercise for the Fronend index
+    - Additional Exercise for the Frontend index
