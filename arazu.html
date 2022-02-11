@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">&nbsp;<img src="img/logo.png" alt="logo" width="50px" height="50px" style="vertical-align: middle;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HTML</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CSS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BOOTSTRAP</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+    <!-- navbar end -->
+
+   
+      <div class="row g-0">
+        <div class="col-sm-2">
+           <!-- sidemenu start -->
+            <div class="menu"> 
+                <div>
+                    <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <h4 class="menu_name">HTML Task</h4>
+                    </a>
+                </div>
+                  <div class="collapse" id="collapseExample">
+                    <ul>
+                       <li><a data-bs-toggle="collapse" href="#module1" role="button" aria-expanded="false" aria-controls="collapseExample"><p style=" color: black;">Module1</p></a></li>
+                       <div class="collapse" id="module1">
+                        <ul>
+                            <li> <a href="Day1/day1.html" target="_self"><p style=" color: black;">Assignment</p></a> </li>
+                            <li>Practical</li>
+                            <li>Documents</li>
+                        </ul>
+                    </div>
+                       <li><a data-bs-toggle="collapse" href="#module2" role="button" aria-expanded="false" aria-controls="collapseExample"><p style=" color: black;">Module 2</p></a></li>
+                       <div class="collapse" id="module2">
+                        <ul>
+                            <li>Assignment</li>
+                            <li>Practical</li>
+                            <li>Documents</li>
+                        </ul>
+                    </div>
+                    </ul>
+                  </div>
+                   <!-- sidemenu end -->
+            </div>
+        </div>
+        <div class="col-sm-10">
+            <div class="main">
+              <h2>HTML Training</h2> <hr>
+              HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. 
+              HTML is the combination of Hypertext and Markup language. Hypertext defines the link between the web pages.
+              A markup language is used to define the text document within tag which defines the structure of web pages. 
+              This language is used to annotate text so that a machine can understand it and manipulate text accordingly. 
+              Most markup languages are human-readable. The language uses tags to define what manipulation has to be done 
+              on the text. <br><br>
+
+              <h3 class="html_module1">Module 1</h3> <hr>
+              <p><h5 class="font-weight-bold">What to learn</h5></p><hr style="width:20%", size="3", color=black> 
+              
+              <ul>
+                <li>What is HTML5</li>
+                <li>Empty Tags</li>
+                <li>Common HTML Tags</li>
+                <li>What is Attribute</li>
+                <li>HTML Tables</li>
+                <li>Ordered List & Unordered List</li>
+                <li>Naming Convention</li>
+                <li>HTML Layout</li>
+                <li>Semantic Markup</li>
+                <li>Header& Footer</li>
+                <li>Section, Nav, aside</li>
+                <li> Forms</li>
+                <li>Validation</li>
+              </ul>
+
+              <p><h5 class="font-weight-bold">Practice Exercise</h5></p><hr style="width:20%", size="3", color=black>
+             
+             <ul>
+               <li>Display Student Report Card, Which contains field like Name, RollNo, Year Of Passing. Different subject marks should be displayed with its grade</li>
+               <li>You are working in some company as HR. you have been assigned a task to arrange department hierarchy example: employee working under some manager.</li>
+               <li>Create Login Form with field UserName and Password field.</li>
+               <li>Use Article tag display one latest news.</li>
+               <li>Create Horizontal menu. Menu item will Home, AboutUs, ContactUS.</li>
+               <li>Use Nav tag and anchor tag</li>
+             </ul>
+              
+              <p><h5 class="font-weight-bold">Assignment</h5></p><hr style="width:20%", size="3", color=black>
+              
+             <ul>
+               <li>
+                 Design a form for storing employee details. (Employee name, age, Gender, designation, salary, location, Email ID, Date of Joining and contact number)
+                 <ul>
+                   <li>Validation required</li>
+                   <li>Age should be a number</li>
+                   <li>Each field should contain value</li>
+                   <li>Email ID should be in proper format</li>
+                   <li>Date of joining should be in date format</li>
+                   <li>Location should be in the drop down list</li>
+                   <li>Use radio buttons for Gender</li>
+                 </ul>
+               </li>
+             </ul>
+     </div>
+        </div>
+      </div>
+</body>
+</html>
