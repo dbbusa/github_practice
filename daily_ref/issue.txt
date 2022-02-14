@@ -22,4 +22,3 @@ Practice Exercise
 Assignment
 
 	- Create Photo Album Gallery, which must be responsive. Using Media Queries Implement this task.
-	- Create Responsive Layout with Navigation. Image will be shared through redmine.
