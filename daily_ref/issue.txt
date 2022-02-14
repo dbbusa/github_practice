@@ -1,19 +1,25 @@
-TITLE : Learn CSS, CSS Box Model, CSS Flex Model     
+TITLE : Learn CSS, Media Query, CSS Grid Layout     
 
 CONTENT : 
 
-Practice Exercise :
-    - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel1
-    - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel2
-    - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel3
-    - https://www.w3schools.com/css/exercise.asp?filename=exercise_boxmodel4
-    - Create a flexbox with four flex items
-    - Flexbox with three flex items –right to left direction
-    - Flexbox image gallery
-    - https://www.w3schools.com/css/tryit.asp?filename=trycss3_flexbox_image_gallery
+CSS Module 4
+Learning Outcomes
+	- Media Query
+	- Grid Layou
 
-Assignment :
-    - Create a menu list of the website. It should be responsive.
+Practice Exercise
 
-Additional Exercise :
-    - Additional Exercise for the Frontend index
+	- You have one h1 and one paragraph in your page with blue color border. 
+	   For all the media screen and query selector (maximum width 500px) it should be change to red color border.
+	- Media queries with breakpoint
+	- https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints
+	- Hide elements with Media queries
+	- https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints
+	- Change Font size with Media Queries
+	- https://www.w3schools.com/css/css_rwd_mediaqueries.asp
+    	- Refer media query videos from the CSS Video Section.
+
+Assignment
+
+	- Create Photo Album Gallery, which must be responsive. Using Media Queries Implement this task.
+	- Create Responsive Layout with Navigation. Image will be shared through redmine.
