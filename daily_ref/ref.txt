@@ -70,3 +70,6 @@ nav a:hover {
     text-decoration: none;
     color: #c5c3c3;
 }
+
+
+Font :- Avenir, Helvetica, Arial, sans-serif
