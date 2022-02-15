@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Index Page</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button type="button" class="collapsible1"><b class="fa_menu">HOME</b><i
+          class="fa icon_right">&#xf0c9;</i></button>
+      <div class="content1">
+        <ul>
+          <li><a onclick="ShowModule(1)" class="course">HTML</a></li>
+          <li><a onclick="ShowModule(2)" class="course">CSS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <aside class="column_left">
+      <ul id="show1">
+        <li class="module">
+          <button type="button" class="collapsible" style="cursor: pointer;">Module-1</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 1/Assignment/index.html" target="_blank">Assignment</a></li>
+              <li><a href="./HTML/Module 1/Document/Learning HTML.txt" target="_blank">Document</a></li>
+              <li><a href="./HTML/Module 1/Practical/login.html" target="_blank">Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-2</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 2/Assignment/index.html" target="_blank">Assignment</a></li>
+              <li><a href="./HTML/Module 2/Document/document.txt" target="_blank">Document</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul id="show2" style="display:none;">
+        <li class="module">
+          <button type="button" class="collapsible">Module-1</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 1/Assignment/index.html" target="_blank">Assignment</a></li>
+              <li><a href="./CSS/Module 1/Document/document.txt" target="_blank">Document</a></li>
+              <li><a href="./CSS/Module 1/Practical/index.html" target="_blank">Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-2</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 2/Assignment/index.html" target="_blank">Assignment</a></li>
+              <li><a href="./CSS/Module 2/Document/document.txt" target="_blank">Document</a></li>
+              <li><a href="./CSS/Module 2/Practical/index.html" target="_blank">Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-3</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 3/Assignment/index.html" target="_blank">Assignment</a></li>
+              <li><a href="./CSS/Module 3/Document/document.txt" target="_blank">Document</a></li>
+              <li><a href="./CSS/Module 3/Practical/index.html" target="_blank">Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-4</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 4/Assignment/task-1.html" target="_blank">Assignment</a></li>
+              <li><a href="./CSS/Module 4/Document/document.txt" target="_blank">Document</a></li>
+              <li><a href="./CSS/Module 4/Practical/index.html" target="_blank">Practical</a></li>
+              <li><a href="./CSS/Module 4/Resume/index.html" target="_blank">Resume</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <aside class="column_right">
+
+      <!--course content-->
+      <div>
+        <div id="show_content1">
+          <h1 class="show_content">About HTML Course</h1>
+          <p>HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is
+            the
+            combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup
+            language is used to define the text document within tag which defines the structure of web pages. This
+            language
+            is used to annotate text so that a machine can understand it and manipulate text accordingly. Most markup
+            languages are human-readable. The language uses tags to define what manipulation has to be done on the text.
+          </p>
+        </div>
+
+        <div id="show_content2" style="display:none;">
+          <h1 class="show_content">About CSS Course</h1>
+          <p>CSS (Cascading Style Sheets) is a stylesheet language used to design the webpage to make it attractive. The
+            reason of using CSS is to simplify the process of making web pages presentable. CSS allows you to apply
+            styles
+            to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web
+            page. Styling has been an essential property for any website since many decades. It increases the standards
+            and overall look of the website which makes it easier for the user to interact with it. A website cannot be
+            made without CSS, as styling is MUST since no user would want to interact with a dull and shabby website. So
+            for knowing Web Development, learning CSS is must.
+          </p>
+        </div>
+
+        <div id="show_content3" style="display:none;">
+          <h1 style="font-size:50px;">About Bootstrap course</h1>
+          <p>Bootstrap is a free and open-source tool collection for creating responsive websites and web applications.
+            It
+            is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites.
+            Nowadays, the websites are perfect for all the browsers (IE, Firefox, and Chrome) and for all sizes of
+            screens
+            (Desktop, Tablets, Phablets, and Phones). All thanks to Bootstrap developers – Mark Otto and Jacob Thornton
+            of
+            Twitter, though it was later declared to be an open-source project. It is Faster and Easier way for
+            Web-Development. It creates Platform-independent web-pages. It creates Responsive Web-pages. It designes the
+            responsive web pages for mobile devices too.
+          </p>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <footer>
+    <p>@copyright ankitchauhan0891@gmail.com</p>
+  </footer>
+
+
+  <script>
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        id = "module_content" + i;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    function ShowModule(IdBaseName) {
+      var coll = document.getElementsByClassName("course");
+      for (x = 1; x <= coll.length; x++) {
+        id1 = "show" + x;
+        id2 = "show_content" + x;
+        if (IdBaseName == x) {
+          document.getElementById(id1).style.display = "block";
+          document.getElementById(id2).style.display = "block";
+        }
+        else {
+          document.getElementById(id1).style.display = "none";
+          document.getElementById(id2).style.display = "none";
+        }
+      }
+    }
+
+  </script>
+</body>
+
+</html>
