@@ -58,7 +58,22 @@ inside media query
               });
             }
             </script>
-            
-     button link
-        <button type="button" class="collapsible1"><b class="fa_menu">HOME</b><i
-          class="fa icon_right">&#xf0c9;</i></button>
+        
+        menu code
+        
+        <div class="left">
+            <button type="button" class="collapsible"><b class="fa_menu">HOME</b><i class="fa icon_right">&#xf0c9;</i></button>
+            <div class="content">
+                <img src="./images/img.jpg" />
+                <ul class="menu_list">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#education">EDUCATIONS</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#skill">SKILLS</a></li>
+                    <li><a href="#interest">INTERESTS</a></li>
+                    <li><a href="#award">AWARDS</a></li>
+                    <li><a href="#video">VIDEOS</a></li>
+                </ul>
+            </div>
+        </div>
+     
