@@ -77,3 +77,14 @@ inside media query
             </div>
         </div>
      
+<script>
+
+        function toggle() {
+            var element = document.getElementById("show-menu");
+            element.classList.toggle("hide-show");
+        }
+        function hideHeader() {
+            var element = document.getElementById("show-menu"); 
+            element.classList.toggle("hide-show");
+        }
+    </script>
