@@ -119,3 +119,8 @@ inside media query
                 </ul>
             </div>
         </section>
+
+style::
+        .hide-show{
+    display: none;
+}
