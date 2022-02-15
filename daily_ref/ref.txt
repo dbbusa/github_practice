@@ -88,3 +88,34 @@ inside media query
             element.classList.toggle("hide-show");
         }
     </script>
+
+
+    <section class="sidebar">
+            <div class="side-menu">
+                <div class="image-container">
+                    <img src="assets/img/avtar.jpg" alt="avtar">
+                </div>
+                <ul>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#education">Education </a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skills">Skills & Interests</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </div>
+            <div class="side-menu-mobile">
+                <div class="nav-btn">
+                    <div class="brand-name">
+                        <span>DB</span>
+                    </div>
+                    <button class="btn-menu" id="btn-menu" onclick="toggle()"><span class="fa fa-bars"></span></button>
+                </div>
+                <ul id="show-menu" class="hide-show">
+                    <li><a onclick="hideHeader()" href="#home">About</a></li>
+                    <li><a onclick="hideHeader()" href="#education">Education </a></li>
+                    <li><a onclick="hideHeader()" href="#project">Project</a></li>
+                    <li><a onclick="hideHeader()" href="#skills">Skills & Interests</a></li>
+                    <li><a onclick="hideHeader()" href="#video">Video</a></li>
+                </ul>
+            </div>
+        </section>
