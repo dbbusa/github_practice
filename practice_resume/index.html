@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Resume - Darshit Busa</title>
+</head>
+
+<body>
+    <div class="grid-view">
+        <section class="sidebar">
+            <div class="side-menu">
+                <div class="image-container">
+                    <img src="assets/img/avtar.jpg" alt="avtar">
+                </div>
+                <ul>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#education">Education </a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skills">Skills & Interests</a></li>
+                    <li><a href="#video">Video</a></li>
+                </ul>
+            </div>
+            <div class="side-menu-mobile">
+                <div class="nav-btn">
+                    <div class="brand-name">
+                        <span>DB</span>
+                    </div>
+                    <button class="btn-menu" id="btn-menu" onclick="toggle()"><span class="fa fa-bars"></span></button>
+                </div>
+                <ul id="show-menu" class="hide-show">
+                    <li><a onclick="hideHeader()" href="#home">About</a></li>
+                    <li><a onclick="hideHeader()" href="#education">Education </a></li>
+                    <li><a onclick="hideHeader()" href="#project">Project</a></li>
+                    <li><a onclick="hideHeader()" href="#skills">Skills & Interests</a></li>
+                    <li><a onclick="hideHeader()" href="#video">Video</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="content">
+            <section class="section-content" id="home">
+                <div class="header-section">
+                    <h1 class="jumbotron">Darshit <span class="text-primary">Busa</span></h1>
+                    <p class="description">
+                        <span class="fa fa-map-marker"></span> B-81, Shree Ram Park Society, Morbi Road, Rajkot, 360003
+                        <span class="fa fa-mobile"></span> (+91)-851-188-1027
+                        <span class="fa fa-envelope"></span> <span></span> <a href="mailto:darshitbusa8@gmail.com"
+                            class="text-orange links" target="_blank"> darshitbusa8@gmail.com </a>
+                    </p>
+                    <p class="mt-2 txt-sm">
+                        To gain confidence and fame using my potential in the field of “Web Development”, and express my
+                        innovative creative skills for self and company growth.
+                    </p>
+                    <div class="social-media">
+                        <a href="#"><span class="fa fa-linkedin"></span></a>
+                        <a href="#"><span class="fa fa-github"></span></a>
+                        <a href="#"><span class="fa fa-facebook"></span></a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-content" id="education">
+                <div class="header-section">
+                    <!-- SSC Details -->
+                    <div class="border-left border-color-lightblue mt-2 text-sm">
+                        <h4 class="border-bottom border-color-lightblue">SSC <span
+                                class="text-gray text-right text-small">2011-2016</span></h4>
+                        <h5 class="no-my">Maruti Motherland School, Rajkot</h5>
+                        <ul class="sub-disc">
+                            <li>Achived Grade : 69.50%</li>
+                        </ul>
+                    </div>
+
+                    <!-- Diploma Details -->
+                    <div class="border-left border-color-lightcyan ml-2 mt-2 text-sm">
+                        <h4 class="border-bottom border-color-lightcyan">Diploma in Computer Engineering<span
+                                class="text-gray text-right text-small">2016-2019</span></h4>
+                        <h5 class="no-my">RK University, Rajkot</h5>
+                            <ul class="sub-disc">
+                                <li>Achived Grade : 8.84 CGPA</li>
+                            </ul>
+                    </div>
+
+                    <!-- Bachelor Degree Details -->
+                    <div class="border-left border-color-lightpurple ml-2 mt-2 text-sm">
+                        <h4 class="border-bottom border-color-lightpurple">Bachelor of Technology <span
+                                class="text-gray text-right text-small">2019-Present</span></h4>
+                        <h5 class="no-my">RK University, Rajkot</h5>
+                        <ul class="sub-disc">
+                            <li>Computer Engineering</li>
+                            <li>Achived Grade : 8.77 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section-content mt-2" id="project">
+                <div class="header-section">
+                    <!-- Project 1 -->
+                    <div class="border-left border-color-lightblue mt-2">
+                        <h4 class="border-bottom border-color-lightblue">The NorthStar Nest <span
+                                class="text-gray text-right text-small">2021</span></h4>
+                        <h6 class="no-my">Web Design (Slim - Twing)</h6>
+                        <ul class="sub-disc">
+                            <li>Simple, Attractive and informative website built with Twing Template Engin and php slim
+                                framework for "The Northstar Nest"</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="border-left border-color-lightcyan ml-2 mt-2">
+                        <h4 class="border-bottom border-color-lightcyan">ETUs - URL Shortner <span
+                                class="text-gray text-right text-small">2021</span></h4>
+                        <h6 class="no-my">Web Application (Laravel Framework)</h6>
+                        <ul class="sub-disc">
+                            <li>Convert your irritating long URLs to short URL with existing features.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="section-content" id="skills">
+                <div class="header-section">
+                    <div class="row">
+                        <div class="skill">
+                            <h4 class="border-bottom border-color-lightpurple">Skills</h4>
+                            <ul>
+                                <li>PHP</li>
+                                <li>Android</li>
+                                <li>Laravel</li>
+                                <li>JS | HTML | CSS</li>
+                            </ul>
+                        </div>
+                        <div class="skill">
+                            <h4 class="border-bottom border-color-lightblue">Hobbies</h4>
+                            <ul>
+                                <li>Listening Music</li>
+                                <li>Learning</li>
+                                <li>Movie</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-content" id="video">
+                <div class="header-section text-center">
+                    <h3 class="border-bottom border-color-lightblue">Video Resume</h3>
+                    <h5>This is the Video Resume of the above Resume</h5>
+                    <video src="assets/video/resume.mp4" type="video/mp4" controls class="video-resume"></video>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        // Header Toggle Script
+        function toggle() {
+            var element = document.getElementById("show-menu");
+            element.classList.toggle("hide-show"); // Toggle the class hide-show which contains the code for hidding the content
+        }
+        function hideHeader() {
+            var element = document.getElementById("show-menu"); 
+            element.classList.toggle("hide-show"); // Toggle the class hide-show which contains the code for hidding the content
+        }
+    </script>
+</body>
+</html>
