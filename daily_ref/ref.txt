@@ -1,75 +1,64 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+inside media query
 
+.collapsible {
+        background-color: rgba(19, 18, 18, 0.596);
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        color: white;
+        text-align: none;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .content {
+        padding: 0 18px;
+        overflow: hidden;
+        background-color: rgb(225, 216, 207);
+      }
 
-bootstrap Logo URL
-https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg
+      button{
+          display: block;
+          flex-wrap: wrap;
+          font-weight: bold;
+      }
+      .fa_menu{
+          display:inline-block;
+          float: left;
+      }
+      .icon_right{
+        display: inline-block;
+        float: right;
+        padding-right: 10px;
+      }
+      
+    font link
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    script
+                <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
 
-
-
-
-
-<section id="NavigationBar">
-        <header>
-            <ul>
-                <li>
-                    <img src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" class="brand_logo" />
-                </li>
-                <li>
-                    <nav aria-label="HomeLink"><a href="#">Home</a></nav>
-                </li>
-                <li>
-                    <nav aria-label="AboutUsLink"><a href="#">AboutUs</a></nav>
-                </li>
-                <li>
-                    <nav aria-label="ContactUsLink"><a href="#">ContactUs</a> </nav>
-                </li>
-                <li>
-                    <nav aria-label="LoginLink"><a href="signin.html">Login</a></nav>
-                </li>
-            </ul>
-        </header>
-    </section>
-
-
-
-
-
-     .brand_logo{
-    height: 30px;
-    width: 30px;
-    vertical-align: middle;
-    border-style: none;
- }
- #NavigationBar {
-    width: 100%;
-    top: 0;
-    z-index: 100;
-    display: block;
-    position: fixed;
-}
-header {
-    background: #161b22;
-    padding: 2px;
-    box-shadow: 0px 1px 4px 0px #727374;
-}
-header ul {
-    list-style-type: none;
-}
-header ul li,
-nav {
-    display: inline;
-    text-align: center;
-    margin-inline-start: 10px;
-    color: #d8dee4;
-}
-nav a {
-    text-decoration: none;
-    color: white;
-}
-nav a:hover {
-    text-decoration: none;
-    color: #c5c3c3;
-}
-
-
-Font :- Avenir, Helvetica, Arial, sans-serif
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                  content.style.display = "none";
+                } else {
+                  content.style.display = "block";
+                }
+              });
+            }
+            </script>
+            
+     button link
+        <button type="button" class="collapsible1"><b class="fa_menu">HOME</b><i
+          class="fa icon_right">&#xf0c9;</i></button>
