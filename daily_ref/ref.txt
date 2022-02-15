@@ -73,3 +73,18 @@ nav a:hover {
 
 
 Font :- Avenir, Helvetica, Arial, sans-serif
+
+
+
+
+<script>
+       
+        function toggle() {
+            var element = document.getElementById("show-menu");
+            element.classList.toggle("hide-show"); 
+        }
+        function hideHeader() {
+            var element = document.getElementById("show-menu"); 
+            element.classList.toggle("hide-show");
+        }
+    </script>
