@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Responsive website</title>
+</head>
+
+<body>
+<!-- navbar section -->
+    <header>
+        <div class="side-menu">
+            <nav class="navbar" aria-label="Site menu">
+                <ul>
+                    <img src="img/logo.png" alt="brand_logo" class="logo">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Our Products <button class="dropbtn"><span class="fa fa-caret-down"></span></button></a>
+                    </li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Request a quote</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>  
+        
+        <div class="side-menu-mobile">
+            <div class="nav-btn">
+                <button class="btn-menu" id="btn-menu" onclick="toggle()"><span class="fa fa-bars"></span></button>
+            </div>
+            
+            <nav class="navbar" aria-label="Site menu">
+                <ul>
+                    <img onclick="hideHeader()" src="img/logo.png" alt="brand_logo" class="logo">
+                    <li><a onclick="hideHeader()" href="">Home</a></li>
+                    <li><a onclick="hideHeader()" href="">Our Products <button class="dropbtn"><span class="fa fa-caret-down"></span></button></a>
+                    </li>
+                    <li><a onclick="hideHeader()" href="">About us</a></li>
+                    <li><a onclick="hideHeader()" href="">Pricing</a></li>
+                    <li><a onclick="hideHeader()" href="">Request a quote</a></li>
+                    <li><a onclick="hideHeader()" href="">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- <div class="grid-container"> -->
+        <div class="reg_form">
+            <img src="img/banner.jpg" alt="banner-image" class="banner_img"><br><br>
+
+            <h1>Registration Form</h1><br>
+            <form>
+
+                <div class="form-part">
+                    <div class="row">
+                        <label>First name</label><br>
+                        <input class="lin" type="text" required> <br>
+                    </div>
+
+                    <div class="row">
+                        <label>Last name</label><br>
+                        <input class="lin" type="text" required> <br>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <div class="row">
+                        <label>Mobile Number</label><br>
+                        <input class="lin" type="number" maxlength="10" required> <br>
+                    </div>
+
+                    <div class="row">
+                        <label>Email-ID</label><br>
+                        <input class="lin" type="email" maxlength="10" required> <br>
+                    </div>
+                </div>
+                <div class="form-part">
+                    <div class="row">
+                        <label>Address</label>
+                        <input class="lin" type="text" required> 
+                    </div>
+
+                    <div class="row">
+                        <label>Select City</label>
+                        <select name="City" class="lin" id="location" required>
+                            <option></option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="	Surat"> Surat</option>
+                            <option value="Jamnagar">Jamnagar</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                            <option value="Vadodra">Vadodra</option>
+                            <option value="Pune">Pune</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-part">
+                    <div class="row">
+                        <label>District</label><br>
+                        <select name="City" id="location" class="lin dropdown_icon" required>
+                            <option></option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="	Surat"> Surat</option>
+                            <option value="Jamnagar">Jamnagar</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                            <option value="Vadodra">Vadodra</option>
+                            <option value="Pune">Pune</option>
+                        </select> <br>
+                    </div>
+
+                    <div class="row">
+                        <label>State</label><br>
+                        <select name="City" id="location" required>
+                            <option></option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="	Surat"> Surat</option>
+                            <option value="Jamnagar">Jamnagar</option>
+                            <option value="Bhavnagar">Bhavnagar</option>
+                            <option value="Vadodra">Vadodra</option>
+                            <option value="Pune">Pune</option>
+                        </select> <br>
+                    </div>
+                </div>
+
+                <div class="form-part">
+                    <div class="row">
+                        <label>Company</label><br>
+                        <input class="lin" type="text" required> <br>
+                    </div>
+
+                    <div class="row">
+                        <label>Website</label><br>
+                        <input class="lin" type="text" required> <br>
+                    </div>
+                </div>
+
+                <div class="form-part">
+                    <div class="row">
+                        <label>Hobbies</label><br>
+                        <input class="rd" type="checkbox" value="Cricket" required><label>Cricket</label>
+                        <input class="rd" type="checkbox" value="Reading" required><label>Reading</label><br>
+                        <input class="rd" type="checkbox" value="Singing" required><label>Singing</label>
+                        <input class="rd" type="checkbox" value="Cooking" required><label>Cooking</label><br>
+                    </div>
+
+                    <div class="row">
+                        <label>Gender</label><br>
+                        <input class="rd" type="radio" id="Female" name="gender" value="Female"
+                            required><label>Female</label>
+                        <input class="rd" type="radio" id="Male" name="gender" value="Male"
+                            required><label>Male</label><br><br><br><br>
+                    </div>
+                </div>
+
+                <div class="form-part">
+                    <div class="row">
+                        <input type="submit" class="button" value="Submit">
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" class="button" value="Clear">
+                    </div>
+                </div>
+            </form>
+        </div>
+    <!-- </div> -->
+
+    <div class="responsive" id="product">
+       <br><br> <h1>Our Products</h1><br><br>
+        <div class="imgs">
+            <div class="form-part">
+                <div class="row">
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-part">
+                <div class="row"><br><br>
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+
+                <div class="row"><br><br>
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+
+                <div class="row"><br><br>
+                    <h2>Lorem ipsum</h2>
+                    <img src="img/Product img.png" alt="product">
+                    <ul class="des">
+                        <p >MAKE YOUR MARK WITH PREMIUM BUSINESS </p>
+                        <li>Starting at $19.99 for 500</li>
+                        <li>Create in minutes</li>
+                        <li>4-color printing various type of card</li>
+                        <li>One or both side printing</li>
+                    </ul>
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    
+    <script>
+        function toggle(){
+            var element = document.getElementById("show-menu");
+            element.classList.toggle("hide-show");
+        }
+
+        function hideHeader(){
+            var element = document.getElementById("show-menu");
+            element.classList.toggle("hide-show");
+        }
+    </script>
+
+</body>
+
+</html>
