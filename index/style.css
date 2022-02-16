@@ -24,11 +24,19 @@ header ul {
 header li {
     display: block;
     float: left;
-    padding: 30px;
     margin-left: 20px;
 }
 
-a {
+header a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 30px 40px;
+}
+
+.content a{
+    display: block;
     text-decoration: none;
     color: white;
     cursor: pointer;
@@ -170,7 +178,6 @@ li:hover {
     .content1{
         background-color: rgb(105, 102, 102);
         display: none;
-        
     }
 
     nav{
@@ -200,5 +207,11 @@ li:hover {
     
     .column_left{
         min-height: auto;
+    }
+    .content a{
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        cursor: pointer;
     }
 }

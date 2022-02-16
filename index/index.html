@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
   <title>Index Page</title>
 </head>
 
@@ -15,7 +16,7 @@
     <nav>
       <button type="button" class="collapsible1"><b class="fa_menu">HOME</b><i
           class="fa icon_right">&#xf0c9;</i></button>
-      <div class="content1">
+      <div class="content1" id="content">
         <ul>
           <li><a onclick="ShowModule(1)" class="course">HTML</a></li>
           <li><a onclick="ShowModule(2)" class="course">CSS</a></li>
@@ -89,6 +90,14 @@
             </ul>
           </div>
         </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-5</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 5/Assignment/index.html" target="_blank">Assignment</a></li>
+            </ul>
+          </div>
+        </li>
       </ul>
     </aside>
     <aside class="column_right">
@@ -142,8 +151,8 @@
     <p>@copyright ankitchauhan0891@gmail.com</p>
   </footer>
 
-
   <script>
+
 
     var coll = document.getElementsByClassName("collapsible");
     var i;
@@ -190,8 +199,13 @@
           document.getElementById(id2).style.display = "none";
         }
       }
-    }
 
+      var x = window.matchMedia("(max-width: 850px)")
+      if (x.matches) {
+        document.getElementById("content").style.display = "none";
+      }
+      
+    }
   </script>
 </body>
 
