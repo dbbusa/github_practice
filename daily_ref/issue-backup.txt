@@ -92,3 +92,11 @@ Design a form for storing employee details. (Employee name, age, Gender, designa
     Date of joining should be in date format
     Location should be in the drop down list
     Use radio buttons for Gender
+
+Day 12 :
+
+Title: Working on addition task and index page
+
+- 10 products should be displayed field Name, Price, image, discount in grid and card structure, it should be responsive .... done this task
+- Implement main index.html page
+- CSS Module Videos
