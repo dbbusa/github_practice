@@ -102,3 +102,18 @@ Practice Exercise
 Assignment
 
 	- Create Photo Album Gallery, which must be responsive. Using Media Queries Implement this task.
+
+
+Day 12:
+
+Title : CSS Additional Activity Assigned Yesterday and Formate Frontend Menu
+
+CSS Learning Task:
+       
+     - Media Query
+     - Grid Layout
+
+Task 
+        
+     - Create Responsive Layout .... done this task
+     - Re-Format Menu for Front end 
