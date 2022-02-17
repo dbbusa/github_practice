@@ -1,85 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Frontend-Dashboard</title>
-  </head>
-  <body>
-    <div id="app">
-      <section id="NavigationBar">
-        <header>
-            <ul>
-                <li>
-                  <nav aria-label="HTMLLink">
-                    <div class="dropdown">
-                      <a class="dropbtn">HTML 
-                        <i class="fa fa-caret-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                      <div class="dropdown-sub">
-                          <a class="dropbtn">Module 1 
-                            <i class="fa fa-caret-down"></i>
-                          </a>
-                          <div class="dropdown-content-sub">
-                            <a href="HTML/Day1/assignments/index.html" target="_blank">Assignment</a>
-                            <a href="HTML/Day1/practice/index.html" target="_blank">Practice</a>
-                          </div>
-                        </div>
 
-                        <div class="dropdown-sub">
-                          <a class="dropbtn">Module 2
-                            <i class="fa fa-caret-down"></i>
-                          </a>
-                          <div class="dropdown-content-sub">
-                            <a href="HTML/Day2/Assignments/index.html" target="_blank">Assignment</a>
-                          </div>
-                        </div>
-                      
-                      </div>
-                    </div>
-                  </nav>
-                </li>
-                <li>
-                  <nav aria-label="CSSLink">
-                    <div class="dropdown">
-                      <a class="dropbtn">CSS 
-                        <i class="fa fa-caret-down"></i>
-                      </a>
-                      <div class="dropdown-content">
-                      <div class="dropdown-sub">
-                          <a class="dropbtn">Module 1 
-                            <i class="fa fa-caret-down"></i>
-                          </a>
-                          <div class="dropdown-content-sub">
-                            <a target="_blank" href="CSS/Day1/Assignments/index.html">Assignment</a>
-                            <a target="_blank" href="CSS/Day1/Practice/index.html">Practice</a>
-                          </div>
-                        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Index Page</title>
+</head>
 
-                        <div class="dropdown-sub">
-                          <a class="dropbtn">Module 2
-                            <i class="fa fa-caret-down"></i>
-                          </a>
-                          <div class="dropdown-content-sub">
-                            <a target="_balnk" href="CSS/Day2/Assignments/index.html">Assignment</a>
-                            <a target="_balnk" href="CSS/Day2/Practice/index.html">Practice</a>
-                          </div>
-                        </div>
-                      
-                      </div>
-                    </div>
-                  </nav>
-                </li>
+<body>
+  <header>
+    <nav>
+      <button type="button" class="collapsible1"><b class="fa_menu">HOME</b><i
+          class="fa icon_right">&#xf0c9;</i></button>
+      <div class="content1" id="content">
+        <ul>
+          <li><a onclick="ShowModule(1)" class="course">HTML</a></li>
+          <li><a onclick="ShowModule(2)" class="course">CSS</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <aside class="column_left">
+      <ul id="show1">
+        <li class="module">
+          <button type="button" class="collapsible" style="cursor: pointer;">Module-1</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 1/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./HTML/Module 1/Document/Learning HTML.txt" >Document</a></li>
+              <li><a href="./HTML/Module 1/Practical/login.html" >Practical</a></li>
             </ul>
-        </header>
-    </section>
-    <section class="mainSection">
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-2</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 2/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./HTML/Module 2/Document/document.txt" >Document</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <ul id="show2" style="display:none;">
+        <li class="module">
+          <button type="button" class="collapsible">Module-1</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 1/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./CSS/Module 1/Document/document.txt" >Document</a></li>
+              <li><a href="./CSS/Module 1/Practical/index.html" >Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-2</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 2/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./CSS/Module 2/Document/document.txt" >Document</a></li>
+              <li><a href="./CSS/Module 2/Practical/index.html" >Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-3</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 3/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./CSS/Module 3/Document/document.txt" >Document</a></li>
+              <li><a href="./CSS/Module 3/Practical/index.html" >Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-4</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 4/Assignment/task-1.html" >Assignment</a></li>
+              <li><a href="./CSS/Module 4/Document/document.txt" >Document</a></li>
+              <li><a href="./CSS/Module 4/Practical/index.html" >Practical</a></li>
+              <li><a href="./CSS/Module 4/Resume/index.html" >Resume</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-5</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./CSS/Module 5/Assignment/index.html" >Assignment</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <aside class="column_right">
+
+      <!--course content-->
+      <div class="right_content">
+        <div id="show_content1">
+          <h1 class="show_content">About HTML Course</h1>
+          <p>HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is
+            the
+            combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup
+            language is used to define the text document within tag which defines the structure of web pages. This
+            language
+            is used to annotate text so that a machine can understand it and manipulate text accordingly. Most markup
+            languages are human-readable. The language uses tags to define what manipulation has to be done on the text.
+          </p>
+        </div>
+
+        <div id="show_content2" style="display:none;">
+          <h1 class="show_content">About CSS Course</h1>
+          <p>CSS (Cascading Style Sheets) is a stylesheet language used to design the webpage to make it attractive. The
+            reason of using CSS is to simplify the process of making web pages presentable. CSS allows you to apply
+            styles
+            to web pages. More importantly, CSS enables you to do this independent of the HTML that makes up each web
+            page. Styling has been an essential property for any website since many decades. It increases the standards
+            and overall look of the website which makes it easier for the user to interact with it. A website cannot be
+            made without CSS, as styling is MUST since no user would want to interact with a dull and shabby website. So
+            for knowing Web Development, learning CSS is must.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>@copyright ankitchauhan0891@gmail.com</p>
+      </footer>
+    </aside>
+  </section>
+  <script>
+
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        id = "module_content" + i;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    function ShowModule(IdBaseName) {
+      var coll = document.getElementsByClassName("course");
+      for (x = 1; x <= coll.length; x++) {
+        id1 = "show" + x;
+        id2 = "show_content" + x;
+        if (IdBaseName == x) {
+          document.getElementById(id1).style.display = "block";
+          document.getElementById(id2).style.display = "block";
+        }
+        else {
+          document.getElementById(id1).style.display = "none";
+          document.getElementById(id2).style.display = "none";
+        }
+      }
+
+      var x = window.matchMedia("(max-width: 850px)")
+      if (x.matches) {
+        document.getElementById("content").style.display = "none";
+      }
       
-    </section>
-    </div>
-    <!-- <script type="module" src="/main.js"></script> -->
-  </body>
+    }
+  </script>
+</body>
+
 </html>

@@ -117,3 +117,33 @@ Task
         
      - Create Responsive Layout .... done this task
      - Re-Format Menu for Front end 
+
+Day 13:
+
+Title : Get familiar with Bootstrap, and practice the topics you've learned
+
+Content : 
+
+Typography & Utilites
+- Section Introduction
+- Text Alignment & Display
+- Float & Fixed Positions
+- Colors & Background
+- Margin and Spacing
+- Sizing & Borders
+- CSS Breakpoints
+
+CSS Components
+- Section Intro
+- Buttons & Buttons Groups
+- Navbars & Nav
+- ListGroups & Badges
+- Forms & Input
+- Input Groups
+- Alerts and Progress Bars
+- Tables & Pagination
+- Working with Cards
+- Media Objects
+- Breadcrumbs
+- Carousel
+- Badge
