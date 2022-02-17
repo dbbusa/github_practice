@@ -1,0 +1,89 @@
+.column_right .right_content{
+  display: flex;
+  flex-direction: column;
+  background-color:rgba(0, 0, 0, 0.842);
+}
+
+.column_right * {
+  box-sizing: border-box;
+}
+
+.column_right section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.column_right h1{
+  text-align: center;
+  padding: 20px 0px;
+}
+.column_right table {
+  width: 80%;
+}
+
+.column_right caption {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.column_right table, th, td {
+  border-bottom: 1px solid white;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: rgba(59, 58, 58, 0.829);
+}
+
+.column_right th {
+  background-color: #FF8800;
+}
+
+.column_right tr {
+  height: 40px;
+}
+
+.column_right section p{
+  border : 5px solid white;
+  width:80%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.column_right ul{
+  width: 80%;
+  list-style-type: none;
+}
+
+.column_right li{
+  display:inline;
+  float: left;
+  padding-left: 40px;
+}
+
+.column_right .universal *{
+  background-color: blue;
+}
+
+.column_right .universal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column_right h2{
+  text-align: center;
+}
+
+.column_right .title{
+  text-align: left;
+  font-size: 20px;
+}
+
+.column_right div h1,h2{
+  color: blue;
+}
+
+.column_right .universal p{
+  margin: 10px 0px;
+}

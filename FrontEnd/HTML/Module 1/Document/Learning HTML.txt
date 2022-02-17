@@ -1,0 +1,31 @@
+HTML Outcome :
+
+			Task 1: 
+				Learning : 
+					- Overview of HTML
+					- Different Elements in HTML
+					- HTML Headings
+					- HTML Table
+					- Semantic and Non-semantic tags
+					- Style for Elements
+					- HTML List Elements
+					- Practice of HTML Exercise
+					- Empty Tags
+					- HTML Attributes
+					- Forms 
+					- Forms Validation
+					- Header & Footer
+
+				Practice :
+					- Practiced Below topics for given exercise
+					- Table Design
+					- Article Tag
+					- Navigation Menu Bar
+					- Form Design 
+					- Nav and Anchor Tag
+				
+				Assignment :
+					- Perform Form Design and Basic Validation of Form Elements using Below Topics 
+					- Form Tag
+					- Input Tags
+					- Attributes of Input Tags

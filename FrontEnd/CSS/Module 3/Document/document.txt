@@ -1,0 +1,5 @@
+CSS Learning Outcomes :
+	- CSS Flex Attribute  
+	- Float and Clear
+	- Creat Gallary using Flex attributes
+	- Additional activity of yesterday

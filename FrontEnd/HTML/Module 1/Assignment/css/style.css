@@ -1,0 +1,114 @@
+.column_right .right_content{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column_right * {
+    box-sizing: border-box;
+}
+.column_right form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.column_right .detail {
+    width: 100%;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px red,0 0 30px red,0 0 50px red;
+
+}
+
+.column_right .label {
+    width: 30%;
+    display: inline-block;
+    float: left;
+}
+
+.column_right label {
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 11px;
+}
+
+.column_right .input {
+    width: 60%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.column_right input {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid red;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.column_right input:focus {
+    border: none;
+    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 10px blue, 0 0 20px blue, 0 0 25px blue;
+    border-radius: 20px;
+    outline: none;
+}
+
+.column_right .radio input {
+    display: inline-block !important;
+    width: 7%;
+}
+
+.column_right h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.column_right select {
+    margin-bottom: 8px;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid red;
+    color: white;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.column_right select:focus {
+    border: none;
+    box-shadow: 0 0 5px blue, 0 0 10px blue, 0 0 10px blue, 0 0 20px blue, 0 0 25px blue;
+    border-radius: 20px;
+    outline: none;
+}
+
+
+.column_right input[type="submit"] {
+    width: 50%;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
+.column_right input[type="submit"]:hover {
+    background-color: red;
+    box-shadow: 0 0 20px red;
+}
+
+.column_right input[type="submit"]:active {
+    box-shadow: 0 0 20px white, 0 0 40px white, 0 0 60px white;
+    background-color: black;
+}
