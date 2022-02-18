@@ -133,6 +133,9 @@ Typography & Utilites
 - Sizing & Borders
 - CSS Breakpoints
 
+
+Day 14 :
+Title : Get familiar with Bootstrap, and practice the topics you've learned and Create Resume with Bootstrap
 CSS Components
 - Section Intro
 - Buttons & Buttons Groups
