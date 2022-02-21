@@ -188,3 +188,12 @@ https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi
 
 
 npm config set python c:\python27\python.exe
+
+
+--------------
+
+npm --add-python-to-path='true' --debug install --global windows-build-tools
+
+npm config set python "%USERPROFILE%\.windows-build-tools\python27\python.exe"
+
+npm install -g windows-build-tools
