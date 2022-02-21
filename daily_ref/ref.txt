@@ -174,3 +174,10 @@ https://pixabay.com/images/search/landscape/
                         <a href="#"><span class="fa fa-facebook"></span></a>
                     </div>
                 </div>
+
+
+
+
+
+
+npm install -g --msvs_version=2013 node-gyp rebuild
