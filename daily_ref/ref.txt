@@ -181,3 +181,7 @@ https://pixabay.com/images/search/landscape/
 
 
 npm install -g --msvs_version=2013 node-gyp rebuild
+
+
+
+https://www.python.org/ftp/python/2.7.2/python-2.7.2.amd64.msi
