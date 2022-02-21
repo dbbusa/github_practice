@@ -1,3 +1,9 @@
+Bootstrap Day3
+-Solve the Bugs
+-Learning Bootstrap
+-Practice Exercise of Bootstrap From Bootstrap Example 
+
+-----------------------------------------------------------------
 
 CSS DAY-1
 
