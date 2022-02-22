@@ -177,3 +177,13 @@ Title : Learn More Bootstrap, and practice the Example of bootstrap site and Sta
 - Explore more in Bootstrap
 - Start bootstrap Project
 - Practice Bootstrap Example
+
+
+Title:- Project From tutorial sir - Looplab / Blogen
+
+
+Day 16:
+Title : Learn More in Bootstrap and Project From tutorial sir - Looplab / Blogen
+-Learning of bootstrap components
+-Create Bootstrap project from tutorial site - Looplab
+-Create Bootstrap 2nd Project from tutorial site - Blogen
