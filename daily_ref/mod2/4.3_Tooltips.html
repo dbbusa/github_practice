@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Tooltips</title>
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <h2 class="h1 text-center text-warning">Tooltips</h2>
+
+        <div class="row">
+            <div class="d-block">
+                <button class="btn btn-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Top"> Tooltip
+                    1</button>
+                <button class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" title="Left"> Tooltip
+                    2</button>
+                <button class="btn btn-danger" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Bottom">
+                    Tooltip 3</button>
+                <button class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" title="Right">
+                    Tooltip 4</button>
+            </div>
+        </div>
+
+        <div class="d-block mt-5 text-center">
+            <span class="d-inline-block mx-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="top"
+                title="Disabled Top">
+                <button class="btn btn-success" disabled> Tooltip
+                    1</button>
+            </span>
+            <span class="d-inline-block mx-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="left"
+                title="Disabled Left">
+                <button class="btn btn-primary" disabled> Tooltip
+                    2</button>
+            </span>
+            <span class="d-inline-block mx-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                title="Disabled Bottom">
+                <button class="btn btn-danger" disabled>
+                    Tooltip 3</button>
+            </span>
+
+            <span class="d-inline-block mx-2" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="right"
+                title="Disabled Right">
+                <button class="btn btn-secondary" disabled>
+                    Tooltip 4</button>
+            </span>
+        </div>
+    </div>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
