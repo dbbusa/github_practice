@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body class="container bg-dark text-white">
+    <section class="m-5">
+        <h1 class="text-center"> Typography </h1>
+        <div class="mt-3">
+            <h3>1. Headings</h3>
+            <div class="m-5">
+                <h5>1. Bootstrap heading</h5>
+                <div class="m-3">
+                    <p class="h1">DIsplay</p>
+                    <p class="h2">DIsplay</p>
+                    <p class="h3">DIsplay</p>
+                    <p class="h4">DIsplay</p>
+                    <p class="h5">DIsplay</p>
+                    <p class="h6">DIsplay</p>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>2. Display headings</h5>
+                <div class="m-3">
+                    <h1 class="display-1">Disaplay</h1>
+                    <h2 class="display-2">Display</h2>
+                    <h3 class="display-3">Display</h3>
+                    <h4 class="display-4">Display</h4>
+                    <h5 class="display-5">Display</h5>
+                    <h6 class="display-6">Display</h6>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>3. Customizing headings</h5>
+                <div class="m-3">
+                    <h3>
+                        Fancy display heading
+                        <small class="text-muted">With faded secondary text</small>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>2. Inline text elements</h3>
+            <div class="m-5">
+                <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+                <p><del>This line of text is meant to be treated as deleted text.</del></p>
+                <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+                <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+                <p><u>This line of text will render as underlined.</u></p>
+                <p><small>This line of text is meant to be treated as fine print.</small></p>
+                <p><strong>This line rendered as bold text.</strong></p>
+                <p><em>This line rendered as italicized text.</em></p>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>3. Abbreviations</h3>
+            <div class="m-5">
+                <p><abbr title="Attribute">attr</abbr></p>
+                <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></p>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>4. Blockquotes</h3>
+            <div class="m-5">
+                <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                </blockquote>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>5. Naming a source</h3>
+            <div class="m-5">
+                <figure>
+                    <blockquote class="blockquote">
+                        <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>6. Alignment</h3>
+            <div class="m-5">
+                <div>
+                    <h5>1. Alignment Start</h5>
+                    <figure class="text-start m-3">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h5>2. Alignment Center</h5>
+                    <figure class="text-center">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div>
+                    <h5>3. Alignment End</h5>
+                    <figure class="text-end ">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>7. Lists</h3>
+            <div class="m-5">
+                <h5>1. Unstyled</h5>
+                <div class="m-3">
+                    <ul class="list-unstyled">
+                        <li>This is a list.</li>
+                        <li>It appears completely unstyled.</li>
+                        <li>Structurally, it's still a list.</li>
+                        <li>However, this style only applies to immediate child elements.</li>
+                        <li>Nested lists:
+                            <ul>
+                                <li>are unaffected by this style</li>
+                                <li>will still show a bullet</li>
+                                <li>and have appropriate left margin</li>
+                            </ul>
+                        </li>
+                        <li>This may still come in handy in some situations.</li>
+                    </ul>
+                </div>
+                <h5>2. Inline</h5>
+                <div class="m-3">
+                    <ul class="list-inline">
+                        <li class="list-inline-item">This is a list item.</li>
+                        <li class="list-inline-item">And another one.</li>
+                        <li class="list-inline-item">But they're displayed inline.</li>
+                    </ul>
+                </div>
+                <h5>3. Description list alignment</h5>
+                <div class="m-3">
+                    <dl>
+                        <dt>Description lists</dt>
+                        <dd>A description list is perfect for defining terms.</dd>
+
+                        <dt>Term</dt>
+                        <dd>
+                            <p>Definition for the term.</p>
+                            <p>And some more placeholder definition text.</p>
+                        </dd>
+
+                        <dt>Another term</dt>
+                        <dd>This definition is short, so no extra paragraphs or anything.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-5">
+        <h1 class="text-center"> Utilites </h1>
+        <div class="mt-3">
+            <h3>1. Background</h3>
+            <div class="m-5">
+                <div>
+                    <h5>1. Background color</h5>
+                    <div class="m-3">
+                        <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+                        <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                        <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+                        <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+                        <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+                        <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+                        <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+                        <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+                        <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+                        <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+                        <div class="p-3 mb-2 bg-transparent text-white">.bg-transparent</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5">
+                <div>
+                    <h5>2. Background gradient</h5>
+                    <div class="m-3">
+                        <div class="p-3 mb-2 bg-primary bg-gradient text-white">.bg-primary</div>
+                        <div class="p-3 mb-2 bg-secondary bg-gradient text-white">.bg-secondary</div>
+                        <div class="p-3 mb-2 bg-success bg-gradient text-white">.bg-success</div>
+                        <div class="p-3 mb-2 bg-danger bg-gradient text-white">.bg-danger</div>
+                        <div class="p-3 mb-2 bg-warning bg-gradient text-dark">.bg-warning</div>
+                        <div class="p-3 mb-2 bg-info bg-gradient text-dark">.bg-info</div>
+                        <div class="p-3 mb-2 bg-light bg-gradient text-dark">.bg-light</div>
+                        <div class="p-3 mb-2 bg-dark bg-gradient text-white">.bg-dark</div>
+                        <div class="p-3 mb-2 bg-body bg-gradient text-dark">.bg-body</div>
+                        <div class="p-3 mb-2 bg-white bg-gradient text-dark">.bg-white</div>
+                        <div class="p-3 mb-2 bg-transparent bg-gradient text-white">.bg-transparent</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5">
+                <div>
+                    <h5>3. Background Opacity</h5>
+                    <div class="m-3">
+                        <div class="bg-success p-2 text-white">This is default success background</div>
+                        <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background
+                        </div>
+                        <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+                        <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+                        <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <h3>2. Borders</h3>
+            <div class="m-5">
+                <h5>1. Additive</h5>
+                <div class="m-3 mt-5">
+                    <span class="border bg-danger p-4">1</span>
+                    <span class="border-top bg-danger p-4 ms-3">2</span>
+                    <span class="border-end bg-danger p-4 ms-3">3</span>
+                    <span class="border-bottom bg-danger p-4 ms-3">4</span>
+                    <span class="border-start bg-danger p-4 ms-3">5</span>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>2. Border color</h5>
+                <div class="m-3 mt-5">
+                    <span class="border border-primary p-4">1</span>
+                    <span class="border border-secondary p-4 ms-3">2</span>
+                    <span class="border border-success p-4 ms-3">3</span>
+                    <span class="border border-danger p-4 ms-3">4</span>
+                    <span class="border border-warning p-4 ms-3">5</span>
+                    <span class="border border-info p-4 ms-3">6</span>
+                    <span class="border border-light p-4 ms-3">7</span>
+                    <span class="border border-white p-4 ms-3">8</span>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>3. Border width</h5>
+                <div class="m-3 mt-5">
+                    <span class="border border-1 p-4">1</span>
+                    <span class="border border-2 p-4 ms-3">2</span>
+                    <span class="border border-3 p-4 ms-3">3</span>
+                    <span class="border border-4 p-4 ms-3">4</span>
+                    <span class="border border-5 p-4 ms-3">5</span>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>4. Border Radius</h5>
+                <div class="m-3 mt-5">
+                    <span class="rounded bg-danger p-4">1</span>
+                    <span class="rounded-top bg-danger p-4 ms-3">2</span>
+                    <span class="rounded-end bg-danger p-4 ms-3">3</span>
+                    <span class="rounded-bottom bg-danger p-4 ms-3">4</span>
+                    <span class="rounded-start bg-danger p-4 ms-3">5</span>
+                    <span class="rounded-circle bg-danger p-4 ms-3">6</span>
+                    <span class="rounded-pill bg-danger p-4 ms-3">7</span>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>5. Border Radius Sizes</h5>
+                <div class="m-3 mt-5">
+                    <span class="rounded-0 bg-danger p-4">1</span>
+                    <span class="rounded-1 bg-danger p-4 ms-3">2</span>
+                    <span class="rounded-2 bg-danger p-4 ms-3">3</span>
+                    <span class="rounded-3 bg-danger p-4 ms-3">4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h3>3. Colors</h3>
+            <div class="m-5">
+                <h5>1. Text colors</h5>
+                <div class="m-3">
+                    <p class="text-primary">.text-primary</p>
+                    <p class="text-secondary">.text-secondary</p>
+                    <p class="text-success">.text-success</p>
+                    <p class="text-danger">.text-danger</p>
+                    <p class="text-warning bg-dark">.text-warning</p>
+                    <p class="text-info bg-dark">.text-info</p>
+                    <p class="text-light bg-dark">.text-light</p>
+                    <p class="text-muted">.text-muted</p>
+                    <p class="text-white bg-dark">.text-white</p>
+                    <p class="text-white-50 bg-dark">.text-white-50</p>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>2. Text colors opacity</h5>
+                <div class="m-3">
+                    <div class="text-primary">This is default primary text</div>
+                    <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+                    <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+                    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h3>4. Display</h3>
+            <div class="m-5">
+                <h5>1. Display Inline</h5>
+                <div class="m-3">
+                    <div class="d-inline p-2 bg-primary text-white">d-inline</div>
+                    <div class="d-inline p-2 ms-2 bg-primary text-white">d-inline</div>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>2. Display Block</h5>
+                <div class="m-3">
+                    <span class="d-block p-2 bg-primary text-white">d-block</span>
+                    <span class="d-block p-2 bg-primary mt-2 text-white">d-block</span>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>3. Display Hidden</h5>
+                <div class="m-3">
+                    <div class="d-print-none">Screen Only (Hide on print only)</div>
+                    <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+                    <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-3">
+            <h3>4. Flex</h3>
+            <div class="m-5">
+                <h5>1. Enable flex behaviors</h5>
+                <div class="m-3">
+                    <div class="d-flex p-2 bg-primary">I'm a flexbox container!</div>
+                    <div class="d-inline-flex p-2 mt-2 bg-primary">I'm an inline flexbox container!</div>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>2. Direction</h5>
+                <div class="m-3">
+                    <h6>1. Direction row</h6>
+                    <div class="d-flex flex-row bg-secondary mb-3 ms-3">
+                        <div class="p-2 bg-primary">Flex item 1</div>
+                        <div class="p-2 ms-1 bg-primary">Flex item 2</div>
+                        <div class="p-2 ms-1 bg-primary">Flex item 3</div>
+                    </div>
+                    <h6>2. Direction row reverse</h6>
+                    <div class="d-flex flex-row-reverse bg-secondary mb-3 ms-3">
+                        <div class="p-2 ms-1 bg-primary">Flex item 1</div>
+                        <div class="p-2 ms-1 bg-primary">Flex item 2</div>
+                        <div class="p-2 ms-1 bg-primary">Flex item 3</div>
+                    </div>
+                    <h6>3. Direction column </h6>
+                    <div class="d-flex flex-column mb-3 ms-3">
+                        <div class="p-2 mb-2 bg-primary">Flex item 1</div>
+                        <div class="p-2 mb-2 bg-primary">Flex item 2</div>
+                        <div class="p-2 bg-primary">Flex item 3</div>
+                    </div>
+                    <h6>4. Direction column reverse</h6>
+                    <div class="d-flex flex-column-reverse ms-3">
+                        <div class="p-2 mt-2 bg-primary">Flex item 1</div>
+                        <div class="p-2 mt-2 bg-primary">Flex item 2</div>
+                        <div class="p-2 bg-primary">Flex item 3</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>3. Justify content</h5>
+                <div class="m-3">
+                    <div class="d-flex justify-content-start bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex justify-content-center bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex justify-content-end bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex justify-content-between bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex justify-content-around bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex justify-content-evenly bg-secondary mb-2">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me">Flex Iteam</div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-5">
+                <h5>4. Align items</h5>
+                <div class="m-3">
+                    <div class="d-flex align-items-start bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex align-items-center bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex align-items-end bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex align-items-baseline bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-5 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-1 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-4 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex align-items-stretch bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>5. Align self</h5>
+                <div class="m-3">
+                    <div class="d-flex bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary align-self-start p-2 me-1">Aligned flex item</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary align-self-center p-2 me-1">Aligned flex item</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary align-self-end p-2 me-1">Aligned flex item</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2   me-1">Flex Iteam</div>
+                        <div class="bg-primary align-self-baseline p-2 me-1">Aligned flex item</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-2" style="height: 200px;">
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                        <div class="bg-primary align-self-stretch p-2 me-1">Aligned flex item</div>
+                        <div class="bg-primary p-2 me-1">Flex Iteam</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>5. Fill</h5>
+                <div class="m-3">
+                    <div class="d-flex bg-secondary mb-2">
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item with a lot of content</div>
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item</div>
+                        <div class="p-2 flex-fill bg-primary">Flex item</div>
+                    </div>
+                    <div class="d-flex bg-secondary mb-2">
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item with a lot of content. Flex item with a lot
+                            of content.</div>
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item</div>
+                        <div class="p-2 flex-fill bg-primary">Flex item</div>
+                    </div>
+                    <div class="d-flex bg-secondary">
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item with a lot of content. Flex item with a lot
+                            of content. Flex item with a lot of content</div>
+                        <div class="p-2 flex-fill bg-primary me-1">Flex item</div>
+                        <div class="p-2 flex-fill bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>6. Grow and shrink</h5>
+                <div class="m-3">
+                    <div class="d-flex bg-secondary mb-2">
+                        <div class="p-2 flex-grow-1 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary">Third flex item</div>
+                    </div>
+                    <div class="d-flex bd-secondary">
+                        <div class="p-2 w-100 bg-primary me-1">Flex item</div>
+                        <div class="p-2 flex-shrink-1 bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>7. Auto margins</h5>
+                <div class="m-3">
+                    <div class="d-flex bg-secondary mb-2">
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex bg-secondary mb-2">
+                        <div class="me-auto p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex bg-secondary">
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="p-2 bg-primary me-1">Flex item</div>
+                        <div class="ms-auto p-2 bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>8. Auto margins with align-items</h5>
+                <div class="m-3">
+                    <div class="d-flex align-items-start flex-column bg-secondary mb-2" style="height: 200px;">
+                        <div class="mb-auto p-2 bg-primary">Flex item</div>
+                        <div class="p-2 bg-primary">Flex item</div>
+                        <div class="p-2 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex align-items-end flex-column bg-secondary" style="height: 200px;">
+                        <div class="p-2 bg-primary">Flex item</div>
+                        <div class="p-2 bg-primary">Flex item</div>
+                        <div class="mt-auto p-2 bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>9. Wrap</h5>
+                <div class="m-3">
+
+                    <h6>1. No Wrap</h6>
+                    <div class="d-flex flex-nowrap bg-secondary ms-3 mb-3">
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <h6>2. Wrap</h6>
+                    <div class="d-flex flex-wrap bg-secondary ms-3 mb-3">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <h6>3. Wrap Reverse</h6>
+                    <div class="d-flex flex-wrap-reverse bg-secondary ms-3">
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>10. Order</h5>
+                <div class="m-3">
+                    <div class="d-flex flex-nowrap bg-secondary">
+                        <div class="order-3 p-2 me-1 bg-primary">First flex item</div>
+                        <div class="order-2 p-2 me-1 bg-primary">Second flex item</div>
+                        <div class="order-1 p-2 me-1 bg-primary">Third flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>11. Align content</h5>
+                <div class="m-3">
+                    <div class="d-flex flex-wrap align-content-start bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-content-end bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-content-center bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-content-between bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-content-around bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+
+                    <div class="d-flex flex-wrap align-content-stretch bg-secondary ms-3 mb-3" style="height:200px">
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 mb-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                        <div class="p-2 me-1 bg-primary">Flex item</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="m-5">
+                <h5>11. Media object</h5>
+                <div class="m-3">
+
+                    <div class="d-flex mb-3">
+                        <div class="flex-shrink-0">
+                            <div style="height: 100px;width: 100px;" class="bg-primary"></div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            This is some content from a media component. You can replace this with any content and
+                            adjust it as needed.
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <div style="height: 100px;width: 100px;" class="bg-primary"></div>
+                        </div>
+                        <div class="flex-grow-1 ms-3">
+                            This is some content from a media component. You can replace this with any content and
+                            adjust it as needed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="m-5">
+        <h1 class="text-center"> Utilites </h1>
+        <div class="mt-3">
+            <h3>1. Background</h3>
+            <div class="m-5">
+                <div>
+                    <h5>1. Alignment Start</h5>
+                    <div class="m-3">
+                        sdasd
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
