@@ -187,3 +187,11 @@ Title : Learn More in Bootstrap and Project From tutorial sir - Looplab / Blogen
 -Learning of bootstrap components
 -Create Bootstrap project from tutorial site - Looplab
 -Create Bootstrap 2nd Project from tutorial site - Blogen
+
+
+Day 17:
+Title : Learn More in Bootstrap and Work on Project From Tutorial Site - Blogen / Mizuxe
+
+- Learning of Bootstrap Component
+- Complete Bootstrap Project - Blogen
+- Complete Bootstrap Project - Mizuxe
