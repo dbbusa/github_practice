@@ -202,4 +202,6 @@ Title : Mini Project Assignment: Create a project and prepare the analysis for -
 
 Mini Project Assignment:  
 
+   - Analyze the existing project and prepare the documentation 
+   - Create the design for the same project  
    - Create a separate project.index file and give a link in our existing index file, which will  open in new tab. so that new layout can be open properly.
