@@ -195,3 +195,11 @@ Title : Learn More in Bootstrap and Work on Project From Tutorial Site - Blogen 
 - Learning of Bootstrap Component
 - Complete Bootstrap Project - Blogen
 - Complete Bootstrap Project - Mizuxe
+
+
+Day 18:
+Title : Mini Project Assignment: Create a project and prepare the analysis for - goibibo.com
+
+Mini Project Assignment:  
+
+   - Create a separate project.index file and give a link in our existing index file, which will  open in new tab. so that new layout can be open properly.
