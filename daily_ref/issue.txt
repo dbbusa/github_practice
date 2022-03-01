@@ -214,3 +214,12 @@ Title :Learning Tailwind CSS
 -spacing
 -typography
 -Background
+
+Day 20:
+Title :Tailwind CSS Module 2 Assignment
+#What to learn:
+	-Layout
+	-Flexbox And Grid
+#Assignment:
+	-Create one blog site Which contains visiting places detail information and photos in Ahmedabad. 
+	-Create a user story and make this site
