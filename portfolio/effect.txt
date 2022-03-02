@@ -1,0 +1,48 @@
+  <section class="members gap-0">
+      <div class="flex flex-row">
+        
+        <div class="content relative">
+             <img src="assets/img/team-1.jpg" alt="" class="object-contain ">
+             <div class="team-overlay-content px-4 py-3">
+                <h5 class="mb-0 text-white">Liam Hughes</h5>
+                <p>Manager</p>
+             </div>
+        </div>
+       
+        <img src="assets/img/team-2.jpg" alt="" class="object-contain">
+        <img src="assets/img/team-3.jpg" alt="" class="object-contain">
+        <img src="assets/img/team-4.jpg" alt="" class="object-contain">
+
+      </div>
+    </section>
+    
+    <-------------------------------------------------------------------->
+    css
+    <-------------------------------------------------------------------->
+    .team-overlay-content {
+    position: absolute;
+    width: 70%;
+    left: 0px;
+    bottom: 40px;
+}
+.members:hover .team-overlay-content::before {
+    position: absolute;
+    content: "";
+    height: 60%;
+    width: 60;
+    background: #1f1f40;
+    left: 0;
+    top: 0;
+  
+}
+.members:hover .team-overlay-content::after {
+    position: absolute;
+    content: "Liam Hughes";
+    height: 100%;
+    width: 100%;
+    background: #f57479;
+    left: 0;
+    top: 0;
+    transform-origin: left;
+    transition: .2s ease-in;
+}
