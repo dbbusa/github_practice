@@ -227,9 +227,10 @@ Title :Tailwind CSS Module 2 Assignment
 	-Create a user story and make this site
 	
 Day 21 :
-Title : Refer videos from tutorial site and create responsive portfolio 
+Title : Refer videos from tutorial site and Work on Additional Task
 
 Task :
 
-- Create netninja project from tutorial site
-- Create responsive portfolio 
+- Practice hands on from videos
+- Create Responsive Layout for the given template 
+   Ref. Site - https://demo.themefisher.com/dizer/index.html
