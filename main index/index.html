@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <title>Index Page</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <button type="button" class="collapsible1"><strong class="fa_menu">HOME</strong><em
+          class="fa icon_right">&#xf0c9;</em></button>
+      <div class="content1" id="content">
+        <ul>
+          <li><a href="" class="course">HTML</a></li>
+          <li><a href="./CSS/css.html" class="course">CSS</a></li>
+          <li><a href="./BOOTSTRAP/bootstrap.html" class="course">BOOTSTRAP</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="row">
+    <aside  aria-label="" class="column_left">
+      <ul id="show1">
+        <li class="module">
+          <button type="button" class="collapsible" style="cursor: pointer;">Module-1</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 1/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./HTML/Module 1/Document/Learning HTML.txt" >Document</a></li>
+              <li><a href="./HTML/Module 1/Practical/login.html" >Practical</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="module">
+          <button type="button" class="collapsible">Module-2</button>
+          <div class="content">
+            <ul class="task">
+              <li><a href="./HTML/Module 2/Assignment/index.html" >Assignment</a></li>
+              <li><a href="./HTML/Module 2/Document/document.txt" >Document</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <aside  aria-label="" class="column_right">
+
+      <!--course content-->
+      <div class="right_content">
+        <div id="show_content1">
+          <h1 class="show_content">About HTML Course</h1>
+          <p>HTML stands for HyperText Markup Language. It is used to design web pages using a markup language. HTML is
+            the
+            combination of Hypertext and Markup language. Hypertext defines the link between the web pages. A markup
+            language is used to define the text document within tag which defines the structure of web pages. This
+            language
+            is used to annotate text so that a machine can understand it and manipulate text accordingly. Most markup
+            languages are human-readable. The language uses tags to define what manipulation has to be done on the text.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <p>@copyright ankitchauhan0891@gmail.com</p>
+      </footer>
+    </aside>
+  </section>
+  <script>
+
+
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        id = "module_content" + i;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    var coll = document.getElementsByClassName("collapsible1");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
