@@ -234,3 +234,7 @@ Task :
 - Practice hands on from videos
 - Create Responsive Layout for the given template 
    Ref. Site - https://demo.themefisher.com/dizer/index.html
+
+
+
+--------------------------------
