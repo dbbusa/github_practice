@@ -225,3 +225,11 @@ Title :Tailwind CSS Module 2 Assignment
 #Assignment:
 	-Create one blog site Which contains visiting places detail information and photos in Ahmedabad. 
 	-Create a user story and make this site
+	
+Day 21 :
+Title : Refer videos from tutorial site and create responsive portfolio 
+
+Task :
+
+- Create netninja project from tutorial site
+- Create responsive portfolio 
