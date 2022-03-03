@@ -1,0 +1,39 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mynav{
+    background-color: rgba(0, 150, 136);
+}
+.mynav .nav-item{
+    padding-right: 20px !important;
+    padding-left: 20px !important
+}
+.module{
+    background-color: rgba(0, 150, 136, 0.6);
+    padding: 10px;
+}
+.sub-module{
+    padding: 10px;
+}
+.col-md-2{
+    background-color: #BDBDBD;
+}
+.mobile-menu{
+    display: none !important;
+}
+@media screen and (max-width:995px){
+    .sidemenu{
+        display: none !important;
+        position: unset !important;
+    }
+
+    .mobile-menu{
+        display: block !important;
+        margin: 40px;
+        
+    }
+
+    .col-md-2{
+        display: none !important;
+    }
+}
