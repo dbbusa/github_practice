@@ -244,3 +244,9 @@ Task :
 
 
 --------------------------------
+
+Day 22:
+Title :  TailwindCSS :  Working On Layout Redesign Task - Goibibo.com
+
+Task:
+   - Redesign the Layout of goibibo.com from Bootstrap to Tailwindcss
