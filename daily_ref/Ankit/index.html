@@ -11,6 +11,7 @@
 
 <body>
     <div class="col-6 ms-auto me-auto mt-5  p-3">
+        <form>
             <h1 class="text-center">Basic Calculater</h1>
             <div class="mb-3 mt-3">
                 <label for="exampleInputEmail1" class="form-label">Please enter first number</label>
@@ -22,34 +23,35 @@
             </div>
 
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="operation">
+                <input class="form-check-input" type="radio" name="operation" value="1">
                 <label class="form-check-label" for="flexRadioDefault1">
                     Addition
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="operation">
+                <input class="form-check-input" type="radio" name="operation" value="2">
                 <label class="form-check-label" for="flexRadioDefault2">
                     Subtraction
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="operation">
+                <input class="form-check-input" type="radio" name="operation" value="3">
                 <label class="form-check-label" for="flexRadioDefault2">
                     Multiplication
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="operation">
+                <input class="form-check-input" type="radio" name="operation" value="4">
                 <label class="form-check-label" for="flexRadioDefault2">
                     Division
                 </label>
             </div>
-            <button type="submit" class="btn btn-primary mt-3" onclick="operations()">Submit</button>
+            <button type="button" class="btn btn-primary mt-3" onclick="operations()">Submit</button>
             <button type="reset" class="btn btn-primary mt-3 ms-3" onclick="resetAnswer()">Reset</button>
+        </form>
         <div class="mt-3 d-flex justify-content-center">
             <h5>Result :</h5>
-            <h5 class="result ms-4">0</h5>
+            <h5 class="ms-4" id="result">0</h5>
         </div>
 
     </div>
@@ -58,8 +60,6 @@
         function operations() {
             var num1 = Number(document.getElementById("num1").value);
             var num2 = Number(document.getElementById("num2").value);
-
-            alert(num1+" "+num2);
 
             var operation = document.querySelector('input[name="operation"]:checked').value;
 
@@ -81,11 +81,11 @@
                 default:
                     break;
             }
-            document.getElementsByClassName("result")[0].innerHTML = answer;
+            document.getElementById("result").innerHTML = answer;
         }
 
         function resetAnswer() {
-            document.getElementsByClassName("result")[0].innerHTML = 0;
+            document.getElementById("result").innerHTML = 0;
         }
     </script>
 </body>
