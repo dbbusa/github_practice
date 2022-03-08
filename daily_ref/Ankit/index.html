@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input type="number" id="num1" step="0.0001" placeholder="Enter 1st number :" />
+
+        <input type="number" id="num2" step="0.0001" placeholder="Enter 2nd number :" />
+
+        <input type="radio" name="operation" value="1">
+        <label for="sum">Addition</label>
+
+        <input type="radio" name="operation" value="2">
+        <label for="sub">Subtraction</label>
+
+        <input type="radio" name="operation" value="3">
+        <label for="mul">Multiplication</label>
+
+        <input type="radio" name="operation" class="operation" value="4">
+        <label for="div">Division</label>
+
+        <input type="button" value="Submit" onclick="operations()">
+    </form>
+
+    <script>
+        function operations() {
+            var num1 = Number(document.getElementById("num1").value);
+            var num2 = Number(document.getElementById("num2").value);
+
+            var operation = document.querySelector('input[name="operation"]:checked').value;
+
+            var sum;
+            
+            switch(Number(operation)){
+                case 1:
+                    sum = num1 + num2;
+                    break;
+                case 2:
+                    sum = num1 - num2;
+                    break;
+                case 3:
+                    sum = num1 * num2;
+                    break;
+                case 4:
+                    sum = num1 / num2;
+                    break;
+                default:
+                    break;
+            }
+
+            alert(sum);
+        }
+    </script>
+</body>
+
+</html>
