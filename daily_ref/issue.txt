@@ -1,3 +1,35 @@
+
+JavaScript Day 2
+Title : JavaScript Module 2 Learning, Practice and Assignment
+
+#What to learn
+-Array Method
+-String/String Method
+-Number/Number Method
+-Date/Date Method
+-Regular Expression
+
+#Practice Exercise
+- Write a JavaScript function to check whether a string is blank or not
+- Write a JavaScript function to split a string and convert it into an array of words
+- Write a JavaScript function to extract a specified number of characters from a string.
+- Write a JavaScript function to get the current date
+- Try some operation with list like push, pop, shifting, deleting element
+
+#Assignment
+
+- Date entered by the user should be checked for whether it is a Valid Date or not.
+- Entered date should be in “”MM-DD-YYYY”” format. Display the Date Format along with the Text Box.
+- You are required to perform following checks :
+  - Entered characters should be digits only.
+  - Month should be within the range 1 to 12.
+  - Days should be within the range 1 to 31.
+- Check the entered Days and its corresponding Month.
+
+----------------------------------------------------------------------------------------------
+
+
+
 Javascript Day 1 :
 
 Title : Learn Javascript and completed Practice and Assignment
@@ -30,6 +62,8 @@ Consider following elements:
 - Label: “Result is: ” with final result – Place all the checks to make sure that user enters only numeric values for text boxes. Clicking on “Calculate” button will perform the requested operation and the result will be displayed below “Calculate” and “Reset” buttons in the form of text, e.g. : “Result is : 10”. – Clicking on “Reset” button will reset all the form information including radio button selection and result text.
 
 ----------------------------------------------------------------------------------------------
+
+JavaScript Day 2
 
 Tailwind Day4
 
