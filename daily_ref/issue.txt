@@ -1,4 +1,44 @@
 
+JavaScript Day 3
+Title : JavaScript Module 3 Learning, Practice and Assignment
+
+# What to learn
+
+- DOM Top Level Element
+- Windows
+- Document
+- Navigator
+- History
+
+#Practice Exercise
+
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html1
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html2
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html4
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html5
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html6
+- https://www.w3schools.com/js/exercise_js.asp?filename=exercise_js_dom_html8
+
+- Use Window.location object to navigate on another page
+- Use Window.history object to move to previous url in the history list
+- Try to change windows height and width using Windows object
+
+#Assignment
+Design a form for storing employee details. (EmployeeID, Employee name, age, Gender, designation, salary, location, Email ID, Date of Joining and contact number)
+
+Validation required
+ - EmployeeID should be at least 5 character long. use regular Expression
+ - Age should be a number
+ - Each field should contain value
+ - Email ID should be in proper format
+ - Date of joining should be in date format
+ - Location should be in the drop down list
+ - Use radio buttons for Gender
+ 
+---------------------------------------------------------------------------------------------- 
+
+
+
 JavaScript Day 2
 Title : JavaScript Module 2 Learning, Practice and Assignment
 
