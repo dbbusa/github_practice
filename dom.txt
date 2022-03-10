@@ -1,0 +1,427 @@
+var element;
+
+//return whole document
+//element = document;
+//console.log(element)
+
+//  element = document.all
+//  console.log(element)
+// console.log(element[2])
+// console.log(document.title);
+// console.log(document.body);
+// console.log(document.links);
+// console.log(document.images);
+// console.log(document.images[0]);
+// console.log(document.doctype)
+// console.log(document.URL)
+// console.log(document.domain);
+// console.log(document.baseURI);
+
+/* ******************************************************************************************** */
+
+/*
+DOM Get Methods:-
+1)inner Text
+2)inner HTML
+3)getAttribute
+4)getAttributeNode
+5)Attributes
+*/
+
+// element = document.getElementById("name");
+// console.log(element)
+// element = document.getElementById("name").innerText;
+// console.log(element);
+// element = document.getElementById("name").innerHTML;
+// console.log(element);
+
+
+
+// element = document.getElementsByClassName("container");
+// console.log(element);
+// element = document.getElementsByClassName("container")[0].innerHTML;
+// console.log(element);
+
+// element = document.getElementById("position");
+// console.log(element);
+// element = document.getElementById("position").getAttribute("style");
+// console.log(element);
+// element = document.getElementById("position").getAttributeNode("style");
+// console.log(element);
+
+// element = document.getElementsByClassName("myweb");
+// console.log(element);
+
+// var result = element[0].getElementsByTagName("p");
+// console.log(result);
+// console.log(result[0].innerHTML);
+// console.log(result[1].attributes);
+// console.log(result[1].innerText);
+
+// var result = element[1].getElementsByTagName("div");
+// console.log(result);
+// console.log(result[2].attributes);
+// console.log(result[2].attributes[0].value);
+//console.log(result[2].attributes[1].name);
+// console.log(result[2].innerText);
+
+/* ******************************************************************************************** */
+/*
+DOM Set Methods:-
+1)innerText
+2)innerHTML
+3)setAttribute
+4)Attribute
+5)removeAttribute
+*/
+// console.log(document.getElementById("name").innerText);
+// document.getElementById("name").innerText = "Shree"
+// element = document.getElementById("name");
+// console.log(element.innerText);
+
+// document.getElementById("name").innerHTML = "<b>Shree</b>"
+// element = document.getElementById("name").innerHTML;
+// console.log(element);
+
+// element = document.getElementsByClassName("myweb")
+// console.log(element);
+
+// element[0].setAttribute("style","border:3px solid blue");
+// var result =  (element[0].getAttribute("style"));
+// console.log(result);
+
+// console.log(element[1].getAttribute("style"));
+// element[1].removeAttribute("style");
+// console.log(element[1].getAttribute("style"));
+
+/* ******************************************************************************************** */
+/* QuerySelector & QuerySelectoreALL
+For use the target the DOM like ID , class & Tag name both works are same but difference is
+queryselector return only first match and queryselectorAll return all the match
+*/
+// element = document.querySelector(".container")
+// console.log(element);
+
+// element = document.querySelectorAll(".container")
+// console.log(element);
+
+//nested selector
+// element = document.querySelector(".container #home")
+// console.log(element);
+// element = document.querySelectorAll(".container #resume p")
+// console.log(element);
+
+// element = document.querySelector(".container #resume h2").innerText;
+// console.log(element);
+
+/* ******************************************************************************************** */
+/* DOM Css styling Method
+    1)Style
+    2)Class name
+    document.queryselector("class/Id name").className = "write new classname"    
+    3)Class List
+    document.queryselector("class/Id name").classList = "write new classname"
+    document.queryselector("class/Id name").classList.add("write name")
+    document.queryselector("class/Id name").classList.remove("write name")
+*/
+
+// element =  document.querySelectorAll(".myweb")
+// console.log(element[1].style.border);
+// element[1].style.border = "4px solid pink";
+
+/* ******************************************************************************************** */
+/* Add Event listner:
+*/
+// document.getElementById("name").onclick = abc;
+
+// function abc(){
+//     document.body.style.background = "gray";
+// }
+
+// document.getElementById("name").addEventListener("click",abc);
+// document.getElementById("name").addEventListener("mouseover",function(){
+//     document.body.style.background = "yellow";
+// });
+// document.getElementById("name").addEventListener("mouseout",()=>{
+//     document.body.style.background = "orange";
+// });
+
+/* ******************************************************************************************** */
+/* ClassList :-
+ 1)add(class1,class2)
+ 2)remove(class1,class2)
+ 3)toggle(class)
+ 4)contains(class)
+ 5)item(index)
+ 6)length
+*/
+
+// element = document.getElementsByTagName("header");
+// console.log(element[0]);
+
+// element[0].addEventListener("click",()=>{
+//     console.log(element.classList.length);
+//     element.classList.add("xyz","abc");
+//     document.getElementsByClassName("xyz").style.color = "blue";
+    // console.log(element.classList.length);
+    // var a = element[0].classList.length;
+    //console.log(a);
+
+    // element.classList.remove("new-container");
+    // console.log(element.classList.length);
+    // a = element.classList;
+    // console.log(a);
+
+    // element.classList.toggle("xyz")
+    // console.log(element.classList.length);
+    // var a = element.classList;
+    // console.log(a);
+
+    // console.log(element.classList.item(1));
+
+    // var a = element.classList.contains("xyz")
+    // console.log(a);
+
+    // var a = element.classList.contains("Xyz")
+    // console.log(a);
+// })
+
+/* ******************************************************************************************** */
+/* DOM Traversal :-
+ 1)parentNode
+ 2)parentElement
+ 3)children
+ 4)childNode
+ 5)firstChild
+ 6)firstElementChild
+ 7)lastChild
+ 8)lastElementChild
+ 9)nextElementSibling
+ 10)nextSibling
+ 11)previousElementSibling
+ 12)previousSibling
+*/
+
+/*                                     -------
+                              html            A    =======>parent Node
+                                       -------
+                                          |
+               -----------------------------------------------------------
+                |            |           |         |          |         |
+FirstChild <=== B            C           D         E          F         G ===>LastChild
+               head         body
+               link meta title  header div footer
+E ======> next Sibling Of D
+c ======> previous Sibling Of D
+
+*/
+
+/* parent element & parentNode
+  ---------------------------
+*/
+// element = document.getElementById("inner").parentElement.style.background = "red"
+//console.log(element);
+// element = document.getElementById("outer").parentElement.style.background = "green"
+//console.log(element);
+// element = document.getElementById("inner").parentElement.style.background = "blue"
+//console.log(element);
+// element = document.getElementById("main").parentElement
+// console.log(element);
+// element = document.getElementById("main").parentNode
+// console.log(element);
+
+/* child Elemnet & ChildNode
+  ----------------------------
+*/
+// element = document.getElementById("inner").children
+// console.log(element);
+// element = document.getElementById("inner").children
+// console.log(element);
+// element = document.getElementById("outer").children
+// console.log(element);
+// element = document.getElementById("main").children
+// console.log(element);
+
+// element[1].style.background = "red"
+// element = document.getElementById("inner").childNodes
+// console.log(element);
+
+/* First & Last Element Child
+-------------------------------
+*/
+// element = document.getElementById("inner").firstElementChild
+// console.log(element);
+// console.log(element.innerHTML);
+// document.getElementById("inner").firstElementChild.style.color = "red"
+
+// element = document.getElementById("outer").lastElementChild
+// console.log(element);
+// console.log(element.innerHTML);
+
+// element = document.getElementById("inner").lastElementChild
+// console.log(element);
+// console.log(element.style.background = "red");
+
+// element = document.getElementById("inner").firstChild
+// console.log(element);
+// element = document.getElementById("inner").lastChild
+// console.log(element);
+
+/* Previous & Next Sibling
+---------------------------
+*/
+// element = document.getElementById("childC").nextElementSibling
+// element.style.background = "red"
+// element.innerHTML = "<h5>d</h5>"
+
+// element = document.getElementById("childC").previousElementSibling
+// element.style.background = "red"
+
+// element = document.getElementById("childD").nextElementSibling
+// console.log(element);
+
+// element = document.getElementById("childD").nextSibling
+// console.log(element);
+
+// element = document.getElementById("child-head").previousElementSibling
+// console.log(element);
+
+/* ******************************************************************************************** */
+/* DOM create Methods:-
+   -----------------
+   1)createElement
+   2)createTextNode
+   3)createComment
+*/
+// element = document.createElement("p")
+// console.log(element);
+
+// element = document.createTextNode("This is just Text Node")
+// console.log(element);
+
+// element = document.createComment("This is just Comment")
+// console.log(element);
+
+/* ******************************************************************************************** */
+/* DOM Append Methods:-
+ ----------------------
+   1)appendChild
+   2)insertBefore
+   3)insertAdjacentElement ;-
+       position :
+          beforebegin
+          afterbegin
+          beforeend
+          afterend
+   4)insertAdjacentHtml
+   5)insertAdjacentText
+*/
+//append child take only node paramenter
+// var text = "this is text"
+// var result = element.appendChild(text) //--------->Error
+
+// element = document.createElement("p")
+// var text = document.createTextNode("This is just Text Node")
+// var textcomment = document.createComment("This is comment")
+// var result = element.appendChild(text)
+// console.log(result);
+
+// element = document.getElementById("mydiv")
+// element.appendChild(result)
+// element = document.getElementById("newdiv")
+// document.getElementById("newdiv").appendChild(text)
+// document.getElementById("newdiv").appendChild(textcomment)
+// console.log(element);
+
+// var target = document.getElementById("newdiv");
+// target.insertBefore(text,target.childNodes[0])
+
+// var newElement = document.createElement("h2")
+// var target = document.getElementById("newdiv")
+// target.insertAdjacentElement("beforebegin",newElement)
+
+
+// var newText = document.createTextNode("New Text Node")
+// newElement.appendChild(newText)
+// var newElement = "<h2>Hello</h2>"
+// var target = document.getElementById("newdiv")
+// target.insertAdjacentElement("afterbegin",newElement)
+
+// var newElement = document.createElement("h2")
+// var newText = document.createTextNode("New Text Node")
+// newElement.appendChild(newText)
+// var newElement = "<h2>Hello</h2>"
+// var target = document.getElementById("newdiv")
+// target.insertAdjacentHTML("afterbegin",newElement)
+
+// var target = document.getElementById("newdiv")
+// var newText = "This is Heading"
+// target.insertAdjacentText("beforeend",newText)
+
+/* ******************************************************************************************** */
+/* Replace & Remove Methods :-
+  ----------------------------
+  1)replaceChild()
+  2)removeChild()
+*/
+//Replace Child
+// var newElement = document.createElement("li")
+// console.log(newElement);
+// var newText = document.createTextNode("This is new Text")
+// newElement.appendChild(newText);
+// console.log(newElement);
+
+// var target = document.getElementById("list")
+// var oldElement = target.children[0];
+// target.replaceChild(newElement,oldElement)
+
+//Remove Child
+// var target = document.getElementById("list")
+// target.removeChild(target.children[1])
+
+/* ******************************************************************************************** */
+/* Clone Node :-
+  --------------
+*/
+// var target = document.getElementById("list").children[0];
+// var copyElement = target.cloneNode(true)
+// console.log(copyElement);
+
+// document.getElementById("list1").appendChild(copyElement)
+
+/* ******************************************************************************************** */
+/* DOM Contains() Method:-
+  ----------------------------
+*/
+// var parentElement = document.getElementById("list")
+// var target = document.getElementById("favi")
+// console.log(parentElement.contains(target));
+
+/* ******************************************************************************************** */
+/* hasAttribute() & hasChildNode()
+  ---------------------------------
+*/
+// var target = document.getElementById("newdiv")
+// var find = target.hasAttribute("class")
+// console.log(find)
+// find = target.hasChildNodes()
+// console.log(find);
+// console.log(document.getElementById("mydiv").hasChildNodes());
+
+/* ******************************************************************************************** */
+/* isEqualNode()
+  -----------------
+  Condition:-
+  Same Node Type
+  Same Node Text
+  Same Child Node
+  Same Node Value
+  Same Attribute
+  Same Attribute Value
+*/
+// var target1 = document.getElementById("list")
+// var target2 = document.getElementById("list1")
+// var equal = target1.isEqualNode(target2)
+// console.log(equal);
+
+/* ******************************************************************************************** */
