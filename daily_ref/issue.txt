@@ -1,3 +1,28 @@
+JavaScript Day 4
+
+Title : Learn JavaScript and Perform Practice and Assignment given in Tutorial Site
+
+What to learn
+
+    Callback
+    Var and Let keyword
+    Promises
+    Async and Await
+
+Practice Exercise
+
+    Define a function called callback which receives an argument and prints the square of that number.
+
+    Explain difference between var and let keyword using example.
+
+    Make a function that takes in a single parameter and returns a new promise. using setTimeout, after 500 milliseconds, the promise will either resolove or reject. if the input is a string, the promise resolves with that reverse string . if the input is anything but a string it rejects with that same input call the function wrong Input
+
+Assignment
+
+    University of Mumbai needs to set an online exam for their students. For that they need to set a timer for three hours. After 3 hours exams should be finished.
+
+
+
 
 JavaScript Day 3
 Title : JavaScript Module 3 Learning, Practice and Assignment
