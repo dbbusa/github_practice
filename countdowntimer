@@ -1,4 +1,52 @@
 
+updated
+
+function disTime(){
+
+    document.getElementById("exam_start").style.display = "none";
+    document.getElementById("exam_runing").style.display = "block";
+
+    var time = 50000;    //10800000(3 hour)
+
+    var d_hour = time/(1000 * 60 * 60);
+    var r_hour = parseInt(time/(1000 * 60 * 60));
+
+    var d_mint = (d_hour - r_hour)*60;
+    var r_mint = parseInt((d_hour - r_hour)*60);
+
+    var r_sec = parseInt((d_mint - r_mint) * 60);
+
+    var interval = setInterval(function(){
+        document.getElementById("timer").innerHTML ="Coutdown "+r_hour.toString().padStart(2,0)+":"+r_mint.toString().padStart(2,0)+":"+r_sec.toString().padStart(2,0);
+        if(r_sec == 0 && r_mint == 0 && r_hour == 0){
+            alert("Your exam is auto submited and time out.");
+            document.getElementById("exam_runing").style.display = "none";
+            document.getElementById("exam_finish").style.display = "block";
+            clearInterval(interval);
+        }
+        else if(r_sec == 10 && r_mint == 0 && r_hour == 0){   // warning message 
+            alert("you have only 10 second left.");
+        }
+        else if(r_sec == 0 && r_mint == 0){
+            r_hour-=1;
+            r_mint =59;
+            r_sec = 60;
+        }
+        else if(r_sec == 0){
+            r_mint-=1;
+            r_sec = 60;
+        }
+        r_sec-=1;
+    },1000);
+}
+
+function reExam(){
+    document.getElementById("exam_start").style.display = "block";
+    document.getElementById("exam_finish").style.display = "none";
+}
+
+//old
+
 disTime();
 
 function disTime(){
