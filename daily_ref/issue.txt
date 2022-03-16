@@ -1,3 +1,12 @@
+JavaScript Day 7
+Title : Refer ES6 Videos from tutorial site and W3School
+
+- Revise Concept of JavaScript
+- Refer ES6 videos from tutorial site and practice
+- Refer ES6 from W3School website 
+
+---------------------------------------------------------------------------------------------- 
+
 JavaScript Day 6
 
 Title : JavaScript Module 6 Learning and Practice
