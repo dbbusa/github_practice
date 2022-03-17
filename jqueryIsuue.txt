@@ -1,0 +1,26 @@
+What is jQuery
+
+Selectors : - id selector, class selector
+Events :- Hide, show, Toggle, fadeIn, fadeout
+jQuery DOM Manipulation :- text(), html(), val(), attr()
+jQuery Add Elements:- append(), prepend(), after(), before(), remove(), empty()
+setting CSS:- css()
+iterate:- $.each()
+
+Practice Exercise:
+Create one paragraph, add some dummy text and apply blue background color using jquery
+There is one Hide/show the text inside the #helpText span element when the user’s mouse passes over the text “
+– Label : “Please select your technology :”
+– Consider following set of radio buttons :-
+“PHP”, “ASP.NET”, “ASP”, “JSP”, “PERL”, “Cold Fusion”, “Other”. Layout these buttons in a Horizontal manner.
+– Clicking on a particular radio button should display the related technology name besides label : “You have selected : “.
+– Use multiple “span” HTML element for displaying the related message.
+– Note that radio button should be selectable by clicking on the corresponding label.
+
+Assignment
+Put a droplist with 5 country name from list object using jquery
+– (Eg. India, United Kingdom..). Default value should “Please select”.
+– Bellow droplist all country name which are in the dropdown that should display with Label : “Your Selected Country : “.
+– By default all country name should display.
+– Only that country name should appear which are you select from dropdown. All other label should be disappear.
+– When I select ‘Please select’, all countries name should get displayed.
