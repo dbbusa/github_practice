@@ -24,3 +24,24 @@ Put a droplist with 5 country name from list object using jquery
 – By default all country name should display.
 – Only that country name should appear which are you select from dropdown. All other label should be disappear.
 – When I select ‘Please select’, all countries name should get displayed.
+
+-------------------------------------------------------
+Day2
+-------------------------------------------------------
+Title : Day2 Jquery learning and practice
+1 jQuery Traversing
+Ancestors - parent() - parents()- parentUntil()
+Descendants - Children() - Find()
+Filtering - first() - last() - eq() - filter() - not()
+
+2 jQuery Ajax
+
+Load method
+jQuery get and getJson methods
+jQuery POST request
+Retrieving js file
+3 Practice
+-Practice from W3school Jquery
+
+4 Assignment
+-Use getJSON method access this web api https://gorest.co.in/public-api/users and display the result in one table.
