@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery Day2 Practice</title>
+    <link rel="stylesheet" href="Assets/CSS/styles.css">
+    <link rel="stylesheet" href="Assets/CSS/bootstrap.min.css">
+    <script src="Assets/JS/bootstrap.bundle.min.js"></script>
+    
+    
+  </head>
+  <body>
+   
+
+    <section>
+      <nav class="navbar fixed-top navbar-toggleable navbar-expand-lg navbar-light mynav">
+     <div class="container-fluid">
+        <img src="Assets/img/logo.png" alt="" srcset="" width="50" height="50">
+         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#bootsNav">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+         <div class="collapse navbar-collapse" id="bootsNav">
+             <ul class="text-black navbar-nav">
+                 <li class="nav-item"><a href="../../../HTML/index.html" class="nav-link">HTML</a></li>
+                 <li class="nav-item"><a href="../../../CSS/index.html" class="nav-link">CSS</a></li>
+                 <li class="nav-item"><a href="../../../BOOTSTRAP/index.html" class="nav-link">BOOTSTRAP</a></li>
+                 <li class="nav-item"><a href="../../../TAILWIND/index.html" class="nav-link">TAILWIND</a></li>
+                 <li class="nav-item"><a href="../JAVASCRIPT/index.html" class="nav-link">JAVASCRIPT</a></li>
+                 <li class="nav-item"><a href="../../index.html" class="nav-link active">JQUERY</a></li>
+             </ul>
+         </div>
+     </div>
+ </nav>
+
+ </section>
+ 
+ <section class="sidemenu">
+     <div class="pt-5 row g-0">
+         <div class="col-md-2 d-flex justify-content-center position-fixed vh-100">
+             <ul class="pt-5 list-unstyled">
+                 <li class="module"><a class="btn text-decoration-none text-dark dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#module1" role="button" aria-expanded="false" aria-controls="module1">Module 1</a></li>
+                 <div class="collapse" id="module1">
+                     <ul class="list-unstyled sub-module bg-light">
+                         <li class="sub-module"><a href="../../Day1/Practice/index.html" class="text-decoration-none text-dark">Practice</a></li>
+                         <li class="sub-module"><a href="../../Day1/Assignment/index.html" class="text-decoration-none text-dark">Assignment</a></li>
+                     </ul>
+                 </div><br>                
+                 <li class="module"><a class="btn text-decoration-none text-dark dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#module2" role="button" aria-expanded="false" aria-controls="module2">Module 2</a></li>
+                 <div class="collapse" id="module2">
+                     <ul class="list-unstyled sub-module bg-light">
+                      <li class="sub-module"><a href="index.html" class="text-decoration-none text-dark">Practice</a></li>
+                      <li class="sub-module"><a href="../Assignment/index.html" class="text-decoration-none text-dark">Assignment</a></li>
+                     </ul>
+                 </div><br>               
+             </ul>
+         </div>
+        
+     </div>
+ </section>
+
+ <section class="mobile_sidemenu">
+  <ul class="pt-5 list-unstyled">
+    <li class="module"><a class="btn text-decoration-none text-dark dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#module1" role="button" aria-expanded="false" aria-controls="module1">Module 1</a></li>
+    <div class="collapse" id="module1">
+        <ul class="list-unstyled sub-module bg-light">
+            <li class="sub-module"><a href="index.html" class="text-decoration-none text-dark">Practice</a></li>
+            <li class="sub-module"><a href="../Assignment/index.html" class="text-decoration-none text-dark">Assignment</a></li>
+        </ul>
+    </div><br>                
+    <li class="module"><a class="btn text-decoration-none text-dark dropdown-toggle" data-bs-toggle="collapse" data-bs-target="#module2" role="button" aria-expanded="false" aria-controls="module2">Module 2</a></li>
+    <div class="collapse" id="module2">
+        <ul class="list-unstyled sub-module bg-light">
+         <li class="sub-module"><a href="../../Day2/Practice/index.html" class="text-decoration-none text-dark">Practice</a></li>
+         <li class="sub-module"><a href="../../Day2/Assignment/Assets/" class="text-decoration-none text-dark">Assignment</a></li>
+        </ul>
+    </div><br>
+  
+   
+   
+</ul>
+</section>
+
+<section class="main_body">
+   <div class="pt-lg-5 col-md-10 d-flex justify-content-center sub_main_body">
+          <div class="m-4 accordion w-100" id="accordionExample">
+            <h5>Day2 Practice</h5>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  #1 Practice :Traversing - Ancestors parent() 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Change the ul parent CSS using JQUERY</p> 
+                <div id="main-div" class="p-3 border border-info">
+                  <div style="border: 2px solid orange;">
+                    <p id="my_para" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                  </div>
+                  <div>
+                    <p id="my_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                  </div>
+                </div>
+                <p id="answer1"></p>
+                <button class="mt-2 btn btn-primary" onclick="task1()">Click Here</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                  #2 Practice :Traversing - Ancestors parents() 
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div id="main-div1" class="p-3 ">
+                    <div style="border: 2px solid orange;">
+                      Div (Parent)
+                      <p id="my_para1" style="border: 2px solid orange;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                    <div>
+                      <p id="my_para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                  </div>
+                  <p id="answer2"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task2()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset2()">Reset Here</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+                  #3 Practice Traversing - Descendants children()
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div2" class="p-3 ">
+                    <div>
+                      Div (Parent)
+                      <p id="my_para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                    <div>
+                      <p id="my_para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                  </div>
+                  <p id="answer3"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task3()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset3()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne">
+                  #4 Practice Traversing - Descendants find("*")
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div3" class="p-3 ">
+                    <div>
+                      Div (Parent)
+                      <p id="my_para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                    <div>
+                      <p id="my_para3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt eligendi ex omnis iure delectus cupiditate illo odit repellendus, officiis quaerat.</p>
+                    </div>
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task4()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset4()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne">
+                  #5 Practice Traversing - Siblings siblings()
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div4" class="p-3 ">
+                    <h3 id="Siblings">Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task5()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset5()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="true" aria-controls="collapseOne">
+                  #6 Practice Traversing - Siblings next()
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div5" class="p-3 ">
+                    <h3 id="next">Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task6()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset6()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSeven">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="true" aria-controls="collapseOne">
+                  #7 Practice Traversing - Siblings nextAll()
+                </button>
+              </h2>
+              <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div6" class="p-3 ">
+                    <h3 id="nextall">Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task7()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset7()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingEight">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="true" aria-controls="collapseOne">
+                  #8 Practice Traversing - Siblings nextUntil()
+                </button>
+              </h2>
+              <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div id="main-div6" class="p-3 ">
+                    <h3 id="nextuntil">Heading 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <h2>Heading 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, voluptatem?</p>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task8()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset8()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingNine">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="true" aria-controls="collapseOne">
+                  #9 Practice Filtering first()
+                </button>
+              </h2>
+              <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <div  class="p-3 ">
+                   <p id="first">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                   </p>
+                   <p id="first">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  <p id="first">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  </div>
+                  <p id="answer4"></p>
+                  <button class="mt-2 btn btn-primary" onclick="task9()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset9()">Reset Here</button>
+                
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingten">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseten" aria-expanded="true" aria-controls="collapseOne">
+                  #10 Practice Filtering last()
+                </button>
+              </h2>
+              <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="p-3">
+                   <p id="last">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                   </p>
+                   <p id="last">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  <p id="last">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  </div>
+                  <button class="mt-2 btn btn-primary" onclick="task10()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset10()">Reset Here</button>               
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingelevent">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseelevent" aria-expanded="true" aria-controls="collapseOne">
+                  #11 Practice Filtering eq()
+                </button>
+              </h2>
+              <div id="collapseelevent" class="accordion-collapse collapse" aria-labelledby="headingelevent" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="p-3">
+                   <p id="eq">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                   </p>
+                   <p id="eq">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  <p id="eq">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  </div>
+                  <button class="mt-2 btn btn-primary" onclick="task11()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset11()">Reset Here</button>               
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwelve">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseOne">
+                  #12 Practice Filtering filter()
+                </button>
+              </h2>
+              <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="p-3">
+                   <p class="intro">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                   </p>
+                   <p class="intro">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  <p class="intro">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  </div>
+                  <button class="mt-2 btn btn-primary" onclick="task12()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset12()">Reset Here</button>               
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThirteen">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseOne">
+                  #13 Practice Filtering not()
+                </button>
+              </h2>
+              <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="p-3">
+                   <p class="intro">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                   </p>
+                   <p >
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  <p class="intro">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, aperiam?
+                  </p>
+                  </div>
+                  <button class="mt-2 btn btn-primary" onclick="task13()">Click Here</button>
+                  <button class="mt-2 btn btn-secondary" onclick="reset13()">Reset Here</button>               
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+</section>
+   
+ <script type="text/javascript" src="../../Assets/JS/jquery-3.6.0.min.js"></script>
+ <script type="text/javascript" src="Assets/JS/index.js"></script>
+    <script>
+        $('.navbar-nav>li>a').on('click', function(){
+        $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+ 
+   
+
+  </body>
+</html>
