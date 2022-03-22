@@ -1,3 +1,14 @@
+Title : - Learn JavaScript and perform practice on the topice that you learn
+
+What to Learn
+- Promises 
+- String Functions
+- Regular Expression
+- Fetch Data From URL
+- Callbacks
+
+
+----------------------------------------------------------------------------------------------
 JavaScript Day 7
 Title : Refer ES6 Videos from tutorial site and W3School
 
