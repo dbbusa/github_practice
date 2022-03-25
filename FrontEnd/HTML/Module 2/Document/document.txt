@@ -1,8 +1,0 @@
-HTML Learning Outcomes :
-	- HTML Media Tags 
-	- Attributs of Media Tags
-	- Vite Build Tool
-	- CSS
-
-Assignment Completed :
-	- Create an Attractive Resume with HTML and CSS and also add a Video.

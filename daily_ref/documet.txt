@@ -1,4 +1,0 @@
-CSS Learning Outcomes :
-	- CSS Flex Attribute  
-	- Float and Clear
-	- Additional activity of yesterday

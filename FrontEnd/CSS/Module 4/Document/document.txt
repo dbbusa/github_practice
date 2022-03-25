@@ -1,3 +1,0 @@
-CSS Learning Outcomes :
-	- Media Query
-	- Grid Layout

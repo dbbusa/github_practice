@@ -1,5 +1,0 @@
-Title: Working on additional task and index page
-
-- 10 products should be displayed field Name, Price, image, discount in grid and card structure, it should be responsive .... done this task
-- Implement main index.html page
-- CSS Module Videos

@@ -1,9 +1,0 @@
-.row-height{
-    height: 150px;
-}
-.carousel-indicators button{
-    width: 10px !important;
-    height: 10px !important;
-    background-clip: border-box;
-    border-radius: 50%;
-}

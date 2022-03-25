@@ -1,6 +1,0 @@
-End Day
-     Status
-       - Css Flex Attribute 
-       - Practice and Exercise Done
-       - Work on Home page Design of Vite Project
-       

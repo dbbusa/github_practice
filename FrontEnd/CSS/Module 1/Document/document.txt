@@ -1,8 +1,0 @@
-Learning Outcomes :
-	- Overview of CSS
-	- Types of methos to apply CSS
-	- CSS Selector
-	- Background, Text and Border Properties
- 	- CSS List Attributes
-	- CSS Position Attributes
-	- CSS Display Attributes
