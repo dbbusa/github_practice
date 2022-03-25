@@ -1,0 +1,17 @@
+.profile img{
+    width: 194px!important;
+    height: 165px;
+}
+
+.profile h2{
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.profile a{
+    padding: 10px 8px;
+    background-color: #2b3144;
+    color: white !important;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
