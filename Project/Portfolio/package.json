@@ -1,0 +1,26 @@
+{
+  "name": "bs4starter",
+  "version": "1.0.0",
+  "description": "bootstrap Project",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aarzoo Kaneriya",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "4.0.0-beta",
+    "bootstrap-icons": "^1.8.1",
+    "font-awesome": "^4.7.0",
+    "gulf": "^5.0.3",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.49.8"
+  }
+}
