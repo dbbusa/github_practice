@@ -94,6 +94,3 @@ Numeric enums are number-based enums, which store values as numbers.
       value = "Hello World";  
       console.log("The String value is: "+value);  
 
-# Interface
-
- 
