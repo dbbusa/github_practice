@@ -37,3 +37,19 @@ Title : TypeScript Day2 Learn, Practice and Assignment
 
 - There is a retail shop which need to manage the inventory, whenever some purchase is being made product quantity should be reduced, if quanity is less than 5 reorder request should be raised.
 - Design an interface and classes for the same.
+
+...........................................................................................
+
+day 3
+
+Title : TypeScript Day3 Learn, Practice and Assignment
+
+#Learn and Practice
+- Generic
+- Modules
+- namespace
+
+#Assignment
+
+- This project is aimed at developing a web-based and central Recruitment Process System for the HR Group for a company. Some features of this system will be creating vacancies, storing Applicants data, Interview process initiation, Scheduling Interviews, Storing Interview results for the applicant and finally Hiring of the applicant. Reports may be required to be generated for the use of HR group.
+- Define modules for above case studies and try to import the same
