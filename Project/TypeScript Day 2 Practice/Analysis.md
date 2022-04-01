@@ -26,71 +26,29 @@
 
 # Function
 
-   Functions are the building blocks of readable, maintainable, and reusable code. A function is a set of statements to perform a specific task.
+* Functions are the building blocks of readable, maintainable, and reusable code. A function is a set of statements to perform a specific task.
 
-   ### 	Defining a Function
-   A function declaration tells the compiler about the function name, function parameters, and return type.
-
+### 	Defining a Function
+* A function declaration tells the compiler about the function name, function parameters, and return type.
+```JavaScript
     function functionName( [arg1, arg2, ...argN] );   
-
-   ### Calling a Function
-   We can call a function from anywhere in the program.We must pass the same number of functions as it is declared in the function declaration.
-
+```
+### Calling a Function
+*  We can call a function from anywhere in the program.We must pass the same number of functions as it is declared in the function declaration.
+```JavaScript
     function();
     functiont(para1,para2); //if arguments
-
-   ### Function Creation
-   We can create a function in two ways. 
+```
+### Function Creation
+*   We can create a function in two ways. 
    - Named function
    - Anonymous function
-
+```JavaScript
     //named function
     functionName( [arguments] ) { }  
 
     //Anonymous function
     let res = function( [arguments] ) { }  
+```
 
-# Enum
- Enums stands for Enumerations.It is used to define the set of named constants, i.e., a collection of related values. 
-
-### Numeric Enums
-
-Numeric enums are number-based enums, which store values as numbers.
-
-      enum Direction {  
-      Up = 1,  
-      Down,  
-      Left,  
-      Right,  
-      }  
-
-### String Enums
-      enum AppStatus {  
-      ACTIVE = 'ACT',  
-      INACTIVE = 'INACT',  
-      ONHOLD = 'HLD',  
-      ONSTOP = 'STOP'  
-      }  
-
-
-# Tuples
-
-   A Tuple is an array which store multiple fields belong to different data types. It is similar to the structures
-
-      var tuple1: [number,string][] ;
-      tuple1 = [
-      [1,"Rutika"],
-      [2,"Kartik"],
-      [3,"Naira"]
-      ];
-
-# Union
-
-   In Union we can define a variable which can have multiple types of values.Combine one or two different types of data (i.e., number, string, etc.) 
-
-      let value: number|string;  
-      value = 120;  
-      console.log("The Numeric value is: "+value);  
-      value = "Hello World";  
-      console.log("The String value is: "+value);  
 
