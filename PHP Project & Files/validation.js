@@ -1,4 +1,4 @@
-function validateDateDOB(eleId,errMsg) {
+function validateDateDOB(eleId, errMsg) {
     let inpDateObj = document.getElementById(eleId);
     let inpDate = inpDateObj.value.trim();
     const month31 = [1, 3, 5, 7, 8, 10, 12];
@@ -27,33 +27,33 @@ function validateDateDOB(eleId,errMsg) {
         if (tempYear % 4 == 0 && tempYear % 100 == 0 || tempYear % 400 == 0)
             isLeapYear = true;
 
-        if (mm > 12){
+        if (mm > 12) {
             results += "Invalid Month Please Enter Valid Month";
             return false;
         }
-        else if (month31.includes(mm) && dd > 31){
+        else if (month31.includes(mm) && dd > 31) {
             results += "Invalid Date, Date Should be in 31";
             return false;
         }
-        else if (month30.includes(mm) && dd >= 31){
+        else if (month30.includes(mm) && dd >= 31) {
             results += "Invalid Date, Date Should be in 30";
             return false;
         }
-        else if (isLeapYear && dd > 29 && mm == 2 ){
+        else if (isLeapYear && dd > 29 && mm == 2) {
             results += "Invalid Date, Date Should be in 29";
             return false;
         }
-        else if (!isLeapYear && dd > 28 && mm == 2 ){
+        else if (!isLeapYear && dd > 28 && mm == 2) {
             results += "Invalid Date, Date Should be in 28";
             return false;
         }
         else
             results = "";
-            return true;
-        }
+        return true;
+    }
     document.getElementById(errMsg).innerHTML = results;
 }
-function validateEmail(eleId,errMsg){
+function validateEmail(eleId, errMsg) {
     const emailEle = document.getElementById(eleId).value.trim();
     const regexEmail = new RegExp("([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+");
 
@@ -68,24 +68,24 @@ function validateEmail(eleId,errMsg){
         return true;
     }
 }
-function validatePhone(eleId,errMsg){
+function validatePhone(eleId, errMsg) {
     const phone = document.getElementById(eleId).value.trim();
     const regexContact = new RegExp("^([0-9]{10})$");
 
     if (phone == "") {
         document.getElementById(errMsg).innerHTML = "Phone Number is Required";
         return false;
-    }else if(!regexContact.test(phone)){
+    } else if (!regexContact.test(phone)) {
         document.getElementById(errMsg).innerHTML = "Phone Number should be of 10 digit";
         return false;
-    }else{
+    } else {
         document.getElementById(errMsg).innerHTML = "";
         return true;
     }
 }
-function validateRequiredFiels(eleId,errMsg){
+function validateRequiredFiels(eleId, errMsg) {
     const content = document.getElementById(eleId).value.trim();
-    
+
     if (content == "") {
         document.getElementById(errMsg).innerHTML = "This Field is Required";
         return false;
@@ -94,7 +94,7 @@ function validateRequiredFiels(eleId,errMsg){
         return true;
     }
 }
-function validateUsername(eleId,errMsg){
+function validateUsername(eleId, errMsg) {
     const userName = document.getElementById(eleId).value.trim();
     const regexUserName = new RegExp("(?=\d*[a-zA-Z]*\d*).{5,}");
 
@@ -110,7 +110,7 @@ function validateUsername(eleId,errMsg){
         return true;
     }
 }
-function validateAge(eleId,errMsg){
+function validateAge(eleId, errMsg) {
     const age = document.getElementById(eleId).value.trim();
     const regexage = new RegExp("[0-9]{2}");
 
@@ -128,7 +128,7 @@ function validateAge(eleId,errMsg){
 
 }
 
-function validatePassword(eleId,errMsg){
+function validatePassword(eleId, errMsg) {
     const password = document.getElementById(eleId).value.trim();
     const regexEmail = new RegExp("(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[$@!*#%&]).{8,}");
 
@@ -144,7 +144,7 @@ function validatePassword(eleId,errMsg){
     }
 }
 
-function validateRePassword(eleId1, eleId2, errMsg){
+function validateRePassword(eleId1, eleId2, errMsg) {
     const password = document.getElementById(eleId1).value.trim();
     const repassword = document.getElementById(eleId2).value.trim();
 
@@ -162,16 +162,19 @@ function validateRePassword(eleId1, eleId2, errMsg){
 
 
 
-function validateAllLogin(ele1,ele2,result){
-    
-    if(!validateUsername(ele1,result) || !validatePassword(ele2,result)){
+function validateAllLogin(ele1, ele2, result) {
+
+    if (!validateUsername(ele1, result) || !validatePassword(ele2, result)) {
         return false;
-    }else{
+    } else {
         return true;
     }
 }
 
-function validateAllRegister(result){
-    
-    
-}
+function validateAllRegister(result) {
+
+    if (!validateAge('age', result) || !validateDateDOB('dob', result) || !validateEmail('email', result) || !validatePassword('password', result) || !validateRePassword('password', 'repassword', result) || !validateUsername('username', result) || !validatePhone('phone', result))
+        return false;
+    else
+        return true;
+} 
