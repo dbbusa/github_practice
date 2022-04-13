@@ -1,0 +1,75 @@
+<div class="container">
+    <h4 class="text-center text-uppercase text-secondary">Employee Details</h4> <hr/>
+    <div class="row">
+        <div class="col-md-6">
+                <table class="table table-responsive table-striped" aria-label="Employee">
+                    <thead>
+                        <tr>
+                            <th>Employee Id</th>
+                            <th>Employee Name</th>
+                            <th>Employee Address</th>
+                            <th>Employee Gender</th>
+                            <th>Employee Hobbies</th>
+                            <th>Employee Joining Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let datas of employee">
+                            <td>{{datas.Id}}</td>
+                            <td>{{datas.Name}}</td>
+                            <td>{{datas.Address}}</td>
+                            <td>{{datas.Gender}}</td>
+                            <td>{{datas.Hobbies}}</td>
+                            <td>{{datas.Date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+        <div class="col-md-6">
+           
+                <div class="form-row">
+                    <div class="mb-3 form-group">
+                        <label for="employeeId">Employee Id</label>
+                        <input type="text" class="form-control" id="employeeId" placeholder="Employee Id" [(ngModel)]="eId" autocomplete="off">
+                    </div>
+                    <div class="mb-3 form-group">  
+                        <label for="name">Employee Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Employee Name" [(ngModel)]="eName" autocomplete="off">
+                    </div>                
+                </div>
+                
+                <div class="mb-3 form-group">
+                  <label for="inputAddress">Employee Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="Employee Address" [(ngModel)]="eAddress" autocomplete="off">
+                </div>
+
+                <div class="mb-3">
+                   Employee Gender : 
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" [(ngModel)]="gender" checked>
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female" [(ngModel)]="gender" >
+                        <label class="form-check-label" for="female">Female</label>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div class="mb-3 form-group">
+                        <label for="inputHobbies">Employee Hobbies</label>
+                        <input type="text" class="form-control" id="inputHobbies" placeholder="Employee Hobbies" [(ngModel)]="eHobbies" autocomplete="off">
+                      </div>
+                 </div>
+               
+                 <div class="mb-3 form-group">
+                    <label for="date">Employee Joining Date</label>
+                    <input type="date" class="form-control" [(ngModel)]="date">
+                </div>
+               
+            
+                 <br/>
+                <button type="submit" class="btn btn-primary" (click)="submit()">Sign in</button>             
+        </div>
+    </div>
+</div>
