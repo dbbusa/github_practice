@@ -1,0 +1,14 @@
+title : Starting the Angular
+
+#What to learn
+
+- Introduction to Angular
+- Setting up Angular Project
+- Component
+- One Way Binding
+
+# Practice Exercise
+
+- Create Hello World Component and call the helloWorld Component in the App Component.
+- HelloworldComponent-> Declare a name variable and store your name in that variable and use header tag to interpolate the variable Greeting of the day with name stored in the variable
+- Create one textbox in Helloworld component. Bind its value to name variable
