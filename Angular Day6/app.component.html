@@ -1,0 +1,28 @@
+<div class="container pt-5 mt-4">
+    <h3 class="text-center text-uppercase">Day6 Assignment</h3> <hr/>
+    <div class="row">
+      <div class="col-md-8">
+        <app-products-list [list]="datas"></app-products-list>
+      </div>
+      <div class="col-md-4">
+        <h4 class="text-center text-secondary">Enter Product Details</h4>
+        <div class="mb-3">
+          <label for="productname" class="form-label">Product Name : </label>
+          <input type="text" class="form-control" id="productname" [(ngModel)]="pname">
+        </div>
+        <div class="mb-3">
+          <label for="productqty" class="form-label">Product Quantity : </label>
+          <input type="text" class="form-control" id="productqty" [(ngModel)]="pqty">
+        </div>
+        <div class="mb-3">
+          <label for="productamount" class="form-label">Product Amount : </label>
+          <input type="text" class="form-control " id="productamount" [(ngModel)]="pamount">
+        </div>
+       
+        
+        <button class="btn btn-primary" (click)="submit()">Submit</button>
+      </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
