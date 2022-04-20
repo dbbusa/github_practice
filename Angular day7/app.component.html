@@ -1,0 +1,33 @@
+<!-- <label> 
+  <input type="file" (change)="addFile($event)" [(ngModel)]="url">
+</label>
+<img [src]="url" width="100" height="100">
+
+<app-display [url]="url"></app-display> -->
+<div class="container pt-4 mt-5">
+  <h3 class="text-center text-uppercase">Day7 Assignment</h3> <hr/>
+  <div class="row">
+    <div class="col-md-6">      
+      <a class="mb-3 btn btn-primary" (click)="shows()">Click to Show {{postItem.length}} Like Post</a>
+      <div *ngIf="show">
+          <div class="mb-3" *ngFor='let i of postItem'>
+         
+            <div class="card" style="width: 18rem;">
+              <img class="card-img-top" [src]="i.PUrl" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">{{i.PName}}</h5>
+                <small class="text-secondary fw-bold">{{i.PDate}}</small>
+                <p class="card-text">{{i.PDescription}}</p>
+               
+              </div>
+            </div>
+        
+       </div>
+      </div>
+     
+    </div>
+    <div class="col-md-6">
+      <app-product-list (postnotify)="postserve($event)"></app-product-list>
+    </div>
+  </div>
+</div>

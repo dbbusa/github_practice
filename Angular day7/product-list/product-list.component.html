@@ -1,0 +1,33 @@
+<div class="conatiner">
+    <h4 class="text-center text-uppercase text-secondary">New Post</h4>
+    <div class="mb-3 input-group">
+        <span class="input-group-text">Post Name</span>
+        <input type="text" class="form-control" placeholder="Post Name" [(ngModel)]="name">
+    </div>
+    <div class="mb-3 input-group">
+        <span class="input-group-text">Post Description</span>
+        <textarea class="form-control" aria-label="With textarea" [(ngModel)]="description"></textarea>
+    </div>
+    <div class="mb-3 input-group">
+        <span class="input-group-text">Post Date</span>
+        <input type="text" class="form-control" placeholder="Post Date" [(ngModel)]="date" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="formFile" class="form-label">Select Post Image</label>
+        <input class="form-control" type="file" id="formFile"  (change)="addFile($event)">
+    </div>
+    <button class="mb-3 btn btn-primary" (click)="submit()">Submit</button>
+</div>
+<div class="mb-3" *ngFor='let i of postList'>
+  <div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="i.PUrl" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{i.PName}}</h5>
+      <small class="text-secondary fw-bold">{{i.PDate}}</small>
+      <p class="card-text">{{i.PDescription}}</p>
+      <em class="cursor-auto fa fa-heart" (click)="likePost(i)"></em>
+    </div>
+  </div>
+
+</div>
+  
