@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row g-0">
+    <div class="col-md-2">
+        <nav>
+            <ul class="mb-2 text-center list-group">
+                 <li class="list-group-item active" aria-current="true">User List</li>
+            </ul>
+           
+            <ul class="text-center list-group"  *ngFor="let userLists of userList ; let i = index">
+            
+            <li class="list-group-item"><a class="nav-link text-dark" [routerLink] = "['/User/UserDetail',{id:i}]">{{userLists.userName}}</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="col-md-8"> 
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+</div>
+
